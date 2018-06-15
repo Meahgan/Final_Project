@@ -10,7 +10,6 @@
         }]
 
         const getPodcast = function () {
-            console.log(podcasts);
             return podcasts;
         }
 
@@ -26,30 +25,29 @@
                 setPodcast(response.data);
                 return podcasts;
             });
-            const search = function (title){
-                let url = `https://api.ottoradio.com/v1/podcasts?query=${title}&type=trending&count=10`;
-                console.log(url);
-                 $http.get(url).then(function (response) {
-                    setData(response.data.results);
-                  });
-                };
+        }
+
+        const search = function (title) {
+            let url = `https://api.ottoradio.com/v1/podcasts?query=${title}`;
+            console.log(url);
+            return $http.get(url).then(function (response) {
+                setPodcast(response.data);
+                return podcasts;
+                console.log(podcasts);
+            });
+        };
 
 
-            }
 
-    
-        
-          callPodcastAPI();
-          search();
-          return {
+        return {
             getPodcast,
             setPodcast,
             callPodcastAPI,
             search
-            
+
         }
     }
-        angular
+    angular
         .module("app")
         .factory("podcastService", podcastService);
-       }
+}

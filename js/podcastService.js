@@ -26,52 +26,29 @@
                 setPodcast(response.data);
                 return podcasts;
             });
-          };
+            const search = function (title){
+                let url = `https://api.ottoradio.com/v1/podcasts?query=${title}&type=trending&count=10`;
+                console.log(url);
+                 $http.get(url).then(function (response) {
+                    setData(response.data.results);
+                  });
+                };
+
+
+            }
+
+    
+        
           callPodcastAPI();
+          search();
           return {
             getPodcast,
             setPodcast,
-            callPodcastAPI
-        }
-        }
-
-        //podcast list array
-        // vm.list = {};
-
-        // vm.setData = function (newData) {
-        //     vm.podcasts = [];
-        //     let podcastEntry = {};
-
-        //     for(let i=0; i = newData.length; i++){
-        //         let podcast = newData[i];  //adding into the array 
-        //         console.log(podcasts);
-        //         podcastEntry = {
-        //             title: podcast.title,
-        //             audio_duration: podcast.audio_duration,
-        //             category: podcast.category,
-        //             img_url: podcast.img_url,
-        //             description: podcast.description
-        //         };
-        //         vm.podcasts.push(podcastEntry);
-        //     }
-        // };
-
-        // vm.search = function(title, length, category){
-        //     console.log("working!");
-        //     let url = `https://api.ottoradio.com/v1/podcasts?query=${title}&type=${category}&count=10&length=${audio_duration}`;
-
-        //     $http.get(url).then(function(response){
-        //         vm.setData(response.data.results);
-
-        //         // $location.path("/");
-        //     })
-
-        // }
-
+            callPodcastAPI,
+            search
             
-        
-    angular
+        }
+        angular
         .module("app")
         .factory("podcastService", podcastService);
-
-        }
+       }

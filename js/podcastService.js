@@ -29,11 +29,15 @@
                 return podcasts;
             });
         }
-        // Temp Search Function - so as to not go over API request Limit
+        // Temp Search FAKE API Function - so as to not go over API request Limit
         const search = function(title, language) {
+            let url = `https://api.ottoradio.com/v1/podcasts?query=&type=recent&count=20`;
             console.log(title);
             console.log(language);
-            setPodcast(dataFile.results);
+            return $http.get(url).then(function (response){
+                    setPodcast(dataFile.results);
+                return podcasts;
+            })
 
         }
         /////////////////////////////
@@ -89,7 +93,7 @@
             setPodcast,
             callPodcastAPI,
             search,
-            category
+            // category
         }
     }
     angular

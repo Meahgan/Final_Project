@@ -30,18 +30,15 @@
         //         return podcasts;
         //     });
         }
-        // Temp Search Function - so as to not go over API request Limit
+        // Temp Search FAKE API Function - so as to not go over API request Limit
         const search = function(title, language) {
-          let url = `http://api.ottoradio.com/v1/podcasts?query=&type=recent&count=20`;
+            let url = `https://api.ottoradio.com/v1/podcasts?query=&type=recent&count=20`;
             console.log(title);
             console.log(language);
-            return $http.get(url).then(function(response){
-
-              setPodcast(dataFile.results);
-              return podcasts;
-
+            return $http.get(url).then(function (response){
+                    setPodcast(dataFile.results);
+                return podcasts;
             })
-
 
         }
         /////////////////////////////
@@ -95,7 +92,13 @@
           return {
             getPodcast,
             setPodcast,
+<<<<<<< HEAD
             search
+=======
+            callPodcastAPI,
+            search,
+            // category
+>>>>>>> 3ee8481033d4204bf8bc942aa7a117a2c002072b
         }
       }
 

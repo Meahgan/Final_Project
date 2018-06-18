@@ -10,44 +10,36 @@
         }]
 
         const getPodcast = function () {
-            console.log(podcasts);
+            // console.log(podcasts);
             return podcasts;
         }
 
         const setPodcast = function (newPodcast) {
             podcasts = newPodcast;
         }
-
-        const callPodcastAPI = function () {
-            let url = `https://api.ottoradio.com/v1/podcasts?query=car&type=trending&count=10`;
+          //this is the search function
+          //calls function when you type a title and click GO
+          const search = function(title, length){
+            let url = `https://api.ottoradio.com/v1/podcasts?query=${title}%20${length}&type=trending&count=50`;
+            console.log(length);
             return $http.get(url).then(function (response) {
-                console.log(response);
-                console.log("test");
                 setPodcast(response.data);
                 return podcasts;
+                console.log(podcasts);
             });
-            const search = function (title){
-                let url = `https://api.ottoradio.com/v1/podcasts?query=${title}&type=trending&count=10`;
-                console.log(url);
-                 $http.get(url).then(function (response) {
-                    setData(response.data.results);
-                  });
-                };
+          }
 
 
-            }
 
-    
-        
-          callPodcastAPI();
-          search();
           return {
             getPodcast,
             setPodcast,
-            callPodcastAPI,
             search
-            
+
+
         }
+      }
+
         angular
         .module("app")
         .factory("podcastService", podcastService);

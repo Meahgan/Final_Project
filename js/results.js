@@ -3,7 +3,8 @@
     let results = {
         template: `
         <div ng-repeat="pc in $ctrl.results">
-        <p>{{pc.title}}</p>
+        <p>{{pc.title_original
+}}</p>
         </div>
         `
         ,

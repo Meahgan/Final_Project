@@ -19,47 +19,65 @@
 
         const callPodcastAPI = function () {
             let url = `https://api.ottoradio.com/v1/podcasts?query=car&type=trending&count=10`;
+            
             return $http.get(url).then(function (response) {
+
+
                 console.log(response);
                 console.log("test");
                 setPodcast(response.data);
                 return podcasts;
             });
         }
+        // Temp Search Function - so as to not go over API request Limit
+        const search = function(title, language) {
+            console.log(title);
+            console.log(language);
+            setPodcast(dataFile.results);
 
-        const search = function (title) {
-            let url = `https://api.ottoradio.com/v1/podcasts?query=${title}&type=trending&count=50`;
-            console.log(url);
-            return $http.get(url).then(function (response) {
-                setPodcast(response.data);
-                return podcasts;
-                console.log(podcasts);
-            });
-        };
-
-        const category = function(category){
-            let url = `https://api.ottoradio.com/v1/podcasts?query=${category}&type=recent&count=20`;
-            console.log(url);
-            return $http.get(url).then(function (response){
-                setPodcast(response.data);
-                return podcasts;
-            })
         }
-        const secondsToMinutes = function(sec) {
+        // const search = function(title, language) {
+        //     let exampleUrl = `https://listennotes.p.mashape.com/api/v1/search?genre_ids=68%2C82&language=English&len_max=100&len_min=2&offset=5&only_in=Only+search+in+these+fields&published_after=1390190241000&published_before=1490190241000&q=star+wars&sort_by_date=0&type=episode`;
+        //     let req = {
+        //         method: 'GET',
+        //         url: `https://listennotes.p.mashape.com/api/v1/search?genre_ids=68%2C82&language=${language}&len_max=100&len_min=2&offset=${offset}&only_in=Only+search+in+these+fields&published_after=1390190241000&published_before=1490190241000&q=${title}&sort_by_date=0&type=episode`,
+        //         headers: {
+        //             'X-Mashape-Key': '8bIXPUSY6Hmsh48N9SIRuhp89hoTp1Lqks5jsnps4Q3gYSWt1u',
+        //             'Accept': 'application/json'
+        //             }
+        //         };
+        //     return $http(req).then(function (response) {
+        //         setPodcast(response.data.results);
+        //         console.log(response);
+        //         //setPodcast(dataFile.results);
+        //         //console.log(dataFile.results);
+        //         return podcasts;
+        //     });
+        // };
+
+        // const category = function(category){
+        //     let url = `https://api.ottoradio.com/v1/podcasts?query=${category}&type=recent&count=20`;
+        //     console.log(url);
+        //     return $http.get(url).then(function (response){
+        //         setPodcast(response.data);
+        //         return podcasts;
+        //     })
+        // }
+        // const secondsToMinutes = function(sec) {
             
-            // 36 = 1236 %60
-            let remainder = sec%60;
-            // 20 = (1236 - 36) = 1200/60 = 20
-            let minute = (sec-remainder)/60
+        //     // 36 = 1236 %60
+        //     let remainder = sec%60;
+        //     // 20 = (1236 - 36) = 1200/60 = 20
+        //     let minute = (sec-remainder)/60
 
-            //Input: 1236 seconds
-            //Output: 20minutes 36 seconds
-            return [minute, remainder];
-        }
-        const minutesToSeconds = function(minute) {
-            // User searches for podcast with minutes
-            return minute*60;
-        }
+        //     //Input: 1236 seconds
+        //     //Output: 20minutes 36 seconds
+        //     return [minute, remainder];
+        // }
+        // const minutesToSeconds = function(minute) {
+        //     // User searches for podcast with minutes
+        //     return minute*60;
+        // }
 
 
 

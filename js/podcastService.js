@@ -89,7 +89,7 @@
             setPodcast,
             callPodcastAPI,
             search,
-            category
+            // category
         }
     }
     angular

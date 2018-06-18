@@ -10,6 +10,7 @@
         }]
 
         const getPodcast = function () {
+            // console.log(podcasts);
             return podcasts;
         }
 
@@ -61,7 +62,7 @@
         //     })
         // }
         // const secondsToMinutes = function(sec) {
-            
+
         //     // 36 = 1236 %60
         //     let remainder = sec%60;
         //     // 20 = (1236 - 36) = 1200/60 = 20
@@ -78,14 +79,14 @@
 
 
 
-        return {
+          return {
             getPodcast,
             setPodcast,
-            search,
+            search
             // category
-        }
-    }
-    angular
+      }
+
+        angular
         .module("app")
         .factory("podcastService", podcastService);
-}
+       }

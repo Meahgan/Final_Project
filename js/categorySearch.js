@@ -28,7 +28,7 @@
 
         controller: function (podcastService, $location) {
             let vm = this;
-            vm.category = "";
+            vm.genre = "";
             vm.categoryButtons = function(category){
                 vm.categoryClick = podcastService.category(category);
                 vm.categoryClick.then(function(){

@@ -2,16 +2,26 @@
 <!DOCTYPE html>
 
 <html ng-app="app">
+
 <head>
     <link href="style.css" rel="stylesheet" type="text/css">
     <title>Podcast API</title>
 </head>
+
 <body>
+
+    <a href="#!/Home">Home</a>
+    <a href="#!/Account">Account</a>
+    <a href="#!/yourList">My Podcasts</a>
+
 
     <ng-view></ng-view>
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-route.js"></script>
+
+    <script src="js/exampleResponse.js"></script>
+
     <script src="js/module.js"></script>
     <script src="js/podcastService.js"></script>
     <script src="js/home.js"></script>
@@ -20,4 +30,5 @@
     <script src="js/routing.js"></script>
 
 </body>
+
 </html>

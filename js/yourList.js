@@ -1,5 +1,6 @@
 "use strict";
 {
+<<<<<<< HEAD
 
     let yourList = {
         template: `<p>MY PODCAST LIST</p>`
@@ -17,4 +18,18 @@
     angular
         .module("app")
         .component("yourList", yourList);
+=======
+	let yourList = {
+		template: "{{2+2}}",
+		controller: function(podcastService, $location) {
+
+		}
+	};
+
+	yourList.$inject = ['podcastService', '$location'];
+
+	angular
+	.module('app')
+	.component("yourList", yourList);
+>>>>>>> c21861f3f717b9bbc0a1173e5831a7cd55099e35
 }

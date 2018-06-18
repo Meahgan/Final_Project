@@ -57,20 +57,11 @@
           return {
             getPodcast,
             setPodcast,
-<<<<<<< HEAD
-            callPodcastAPI,
-            search,
-            // category
-        }
-    }
-    angular
-=======
             search
             // category
       }
-
+    }
         angular
->>>>>>> c21861f3f717b9bbc0a1173e5831a7cd55099e35
         .module("app")
         .factory("podcastService", podcastService);
        }

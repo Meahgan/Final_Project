@@ -45,6 +45,21 @@
                 return podcasts;
             })
         }
+        const secondsToMinutes = function(sec) {
+            
+            // 36 = 1236 %60
+            let remainder = sec%60;
+            // 20 = (1236 - 36) = 1200/60 = 20
+            let minute = (sec-remainder)/60
+
+            //Input: 1236 seconds
+            //Output: 20minutes 36 seconds
+            return [minute, remainder];
+        }
+        const minutesToSeconds = function(minute) {
+            // User searches for podcast with minutes
+            return minute*60;
+        }
 
 
 

@@ -12,6 +12,7 @@
           <p>{{pc.title}}</p>
           <p>{{pc.audio_duration}}</p>
         </div>
+         <a href=#!/categorySearch><button>Search by Category</button></a>
 
         `
         ,

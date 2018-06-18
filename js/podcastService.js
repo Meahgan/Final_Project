@@ -17,9 +17,11 @@
         const setPodcast = function (newPodcast) {
             podcasts = newPodcast;
         }
+
           //this is the search function
           //calls function when you type a title and click GO
           const search = function(title, length){
+            length = length * 60;
             let url = `https://api.ottoradio.com/v1/podcasts?query=${title}%20${length}&type=trending&count=50`;
             console.log(length);
             return $http.get(url).then(function (response) {
@@ -29,12 +31,23 @@
             });
           }
 
+          //this will look for the category
+          const category = function(category){
+            let url = `https://api.ottoradio.com/v1/podcasts?query=${category}&type=recent&count=20`;
+            console.log(url);
+            return $http.get(url).then(function (response){
+                setPodcast(response.data);
+                return podcasts;
+            })
+        }
+
 
 
           return {
             getPodcast,
             setPodcast,
-            search
+            search,
+            category
 
 
         }

@@ -7,9 +7,7 @@
         <button class="button" ng-click="$ctrl.searchBar(title)">GO</button>
         </div>
         <br>
-        <div ng-repeat="pc in $ctrl.podcasts">
-        <p>{{pc.title}}</p>
-        </div>
+        <a href=#!/categorySearch><button>Search by Category</button></a>
         `
         ,
 
@@ -25,6 +23,7 @@
                 vm.call = podcastService.search(title);
                 vm.call.then(function(){
                     vm.podcasts = podcastService.getPodcast();
+                    $location.path("/results");
                     
                 console.log(vm.podcasts);
                 });

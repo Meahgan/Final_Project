@@ -37,6 +37,15 @@
             });
         };
 
+        const category = function(category){
+            let url = `https://api.ottoradio.com/v1/podcasts?query=${category}`;
+            console.log(url);
+            return $http.get(url).then(function (response){
+                setPodcast(response.data);
+                return podcasts;
+            })
+        }
+
 
 
         return {

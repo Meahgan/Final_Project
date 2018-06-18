@@ -9,8 +9,8 @@
         </div>
         <br>
         <div ng-repeat="pc in $ctrl.podcasts">
-          <p>{{pc.title}}</p>
-          <p>{{pc.audio_duration}}</p>
+          <p>{{pc.title_original}}</p>
+          <p>{{pc.audio_length}}</p>
         </div>
          <a href=#!/categorySearch><button>Search by Category</button></a>
 
@@ -22,6 +22,7 @@
             vm.podcasts = "";
             vm.searchBar = function(title, length){
               console.log(length);
+              console.log(title);
               vm.call = podcastService.search(title, length);
               vm.call.then(function(){
                 vm.podcasts = podcastService.getPodcast();

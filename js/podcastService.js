@@ -28,7 +28,7 @@
         }
 
         const search = function (title) {
-            let url = `https://api.ottoradio.com/v1/podcasts?query=${title}`;
+            let url = `https://api.ottoradio.com/v1/podcasts?query=${title}&type=trending&count=20`;
             console.log(url);
             return $http.get(url).then(function (response) {
                 setPodcast(response.data);
@@ -38,7 +38,7 @@
         };
 
         const category = function(category){
-            let url = `https://api.ottoradio.com/v1/podcasts?query=${category}`;
+            let url = `https://api.ottoradio.com/v1/podcasts?query=${category}&type=recent&count=20`;
             console.log(url);
             return $http.get(url).then(function (response){
                 setPodcast(response.data);
@@ -52,8 +52,8 @@
             getPodcast,
             setPodcast,
             callPodcastAPI,
-            search
-
+            search,
+            category
         }
     }
     angular

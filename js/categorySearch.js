@@ -2,19 +2,19 @@
 {
     let categorySearch = {
         template: `
-        <button ng-model="art">Art</button>
+        <button ng-model="art" ng-click="$ctrl.categoryButtons('art')">Arts</button>
+        <button ng-model="book" ng-click="$ctrl.categoryButtons('book')">Books</button>
+        <button ng-model="business" ng-click="$ctrl.categoryButtons('business')">Business</button>
         `
         ,
 
         controller: function (podcastService, $location) {
             let vm = this;
+            vm.category = "";
             vm.categoryButtons = function(category){
-                vm.categoryClick = podcastService.search(category);
+                vm.categoryClick = podcastService.category(category);
                 vm.categoryClick.then(function(){
-                    vm.podcasts = podcastService.getPodcast();
                     $location.path("/results");
-                    
-                console.log(vm.podcasts);
                 });
 
             }

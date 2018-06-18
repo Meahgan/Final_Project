@@ -28,7 +28,7 @@
         }
 
         const search = function (title) {
-            let url = `https://api.ottoradio.com/v1/podcasts?query=${title}`;
+            let url = `https://api.ottoradio.com/v1/podcasts?query=${title}&type=trending&count=50`;
             console.log(url);
             return $http.get(url).then(function (response) {
                 setPodcast(response.data);

@@ -2,7 +2,8 @@
 {
     let results = {
         template: `
-        <div ng-repeat="pc in $ctrl.results">
+        <input ng-model="searchText" placeholder="Filter your results..." />
+        <div ng-repeat="pc in $ctrl.results | filter: searchText track by $index">
         <p>{{pc.title_original
 }}</p>
         </div>

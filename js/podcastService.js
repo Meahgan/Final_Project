@@ -18,7 +18,7 @@
             podcasts = newPodcast;
         }
 
-        // Temp Search FAKE API Function - so as to not go over API request Limit
+        // FAKE API CALL - ignores OttoRadio Info - Uses local file exampleResponse.js
         const search = function(title, language) {
             let url = `https://api.ottoradio.com/v1/podcasts?query=&type=recent&count=20`;
             console.log(title);

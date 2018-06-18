@@ -85,12 +85,9 @@
             setPodcast,
             search
             // category
-
         }
       }
-    }
         angular
         .module("app")
         .factory("podcastService", podcastService);
-
 }

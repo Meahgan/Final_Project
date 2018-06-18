@@ -13,6 +13,9 @@
         .when("/results", {
           template: "<results></results>"
         })
+        .when("/yourList", {
+          template: "<your-list></your-list>"
+        })
         .otherwise({ redirectTo: "/home" });
        
         

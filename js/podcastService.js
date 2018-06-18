@@ -26,6 +26,7 @@
             return $http.get(url).then(function (response){
 
                     setPodcast(dataFile.results);
+                    $location.path("/results");
                 return podcasts;
             })
 

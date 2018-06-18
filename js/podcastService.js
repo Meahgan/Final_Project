@@ -2,7 +2,7 @@
 {
     function podcastService($http, $location) {
         let podcasts = [{
-            title: "Epi. 36 | Success For Life Podcast Interview with Car Sales King Chris Martinez, achieve maximum sales growth",
+            title_original: "Epi. 36 | Success For Life Podcast Interview with Car Sales King Chris Martinez, achieve maximum sales growth",
             audio_duration: "234",
             category: "cars",
             img_url: "https://cdn.zencast.fm/download/Podcast/artworks/782/large/3da6ee6699da1eb52d358aa59b8e1cf6b5d77db224b4cec0faaa540610fb3b2e/success%20%26%20learning.png",
@@ -18,29 +18,19 @@
             podcasts = newPodcast;
         }
 
-        // const callPodcastAPI = function () {
-        //     let url = `https://api.ottoradio.com/v1/podcasts?query=car&type=trending&count=10`;
-        //
-        //     return $http.get(url).then(function (response) {
-        //
-        //
-        //         console.log(response);
-        //         console.log("test");
-        //         setPodcast(response.data);
-        //         return podcasts;
-        //     });
-        }
+
         // Temp Search FAKE API Function - so as to not go over API request Limit
-        const search = function(title, language) {
-            let url = `https://api.ottoradio.com/v1/podcasts?query=&type=recent&count=20`;
+        const search = function(title, length) {
+            let url = `https://api.ottoradio.com/v1/podcasts?query=&type=${title}&%20${length}recent&count=20`;
             console.log(title);
-            console.log(language);
+            // console.log(length);
             return $http.get(url).then(function (response){
                     setPodcast(dataFile.results);
+                    $location.path("/results");
                 return podcasts;
             })
 
-        }
+
         /////////////////////////////
         // THIS IS WHAT WE WILL USE
         /////////////////////////////
@@ -86,23 +76,20 @@
         //     // User searches for podcast with minutes
         //     return minute*60;
         // }
-
+        }
 
 
           return {
             getPodcast,
             setPodcast,
-<<<<<<< HEAD
             search
-=======
-            callPodcastAPI,
-            search,
             // category
->>>>>>> 3ee8481033d4204bf8bc942aa7a117a2c002072b
+
         }
       }
 
         angular
         .module("app")
         .factory("podcastService", podcastService);
-       }
+
+}

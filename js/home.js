@@ -9,7 +9,6 @@
         </div>
         <br>
          <a href=#!/categorySearch><button>Search by Category</button></a>
-
         `
         ,
         //this will call the search title & length function

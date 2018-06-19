@@ -19,10 +19,10 @@
         controller: function (podcastService, $location) {
             let vm = this;
             vm.podcasts = "";
-            vm.searchBar = function(title, length){
-              console.log(length);
+            vm.searchBar = function(title){
+              // console.log(length);
               console.log(title);
-              vm.call = podcastService.search(title, length);
+              vm.call = podcastService.search(title);
               vm.call.then(function(){
                 vm.podcasts = podcastService.getPodcast();
 

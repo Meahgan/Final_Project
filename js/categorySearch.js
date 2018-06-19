@@ -30,8 +30,9 @@
             let vm = this;
             vm.genre = "";
             vm.categoryButtons = function(genre){
-                vm.categoryClick = podcastService.category(genre);
+                vm.categoryClick = podcastService.genreSearch(genre);
                 vm.categoryClick.then(function(){
+                    console.log(genre);
                     $location.path("/results");
                 });
 

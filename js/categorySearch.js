@@ -29,8 +29,8 @@
         controller: function (podcastService, $location) {
             let vm = this;
             vm.genre = "";
-            vm.categoryButtons = function(category){
-                vm.categoryClick = podcastService.category(category);
+            vm.categoryButtons = function(genre){
+                vm.categoryClick = podcastService.category(genre);
                 vm.categoryClick.then(function(){
                     $location.path("/results");
                 });

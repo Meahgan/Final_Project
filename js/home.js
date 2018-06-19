@@ -5,7 +5,8 @@
         <div class="searchTitle">
           <input ng-model="title" placeholder="Search Titles"/>
           <input ng-model="length" placeholder="search length"/>
-          <button class="button" ng-click="$ctrl.searchBar(title, length)">GO</button>
+          <input ng-model="language" placeholder="enter a language">
+          <button class="button" ng-click="$ctrl.searchBar(title, length, language)">GO</button>
         </div>
         <br>
         <div ng-repeat="pc in $ctrl.podcasts">
@@ -23,7 +24,7 @@
             vm.searchBar = function(title, length){
               console.log(length);
               console.log(title);
-              vm.call = podcastService.search(title, length);
+              vm.call = podcastService.search(title);
               vm.call.then(function(){
                 vm.podcasts = podcastService.getPodcast();
 

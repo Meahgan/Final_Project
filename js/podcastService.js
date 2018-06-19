@@ -19,7 +19,7 @@
         }
 
 
-        // // Temp Search FAKE API Function - so as to not go over API request Limit
+        // Temp Search FAKE API Function - so as to not go over API request Limit
         // const search = function(title, length) {
         //     let url = `https://api.ottoradio.com/v1/podcasts?query=&type=${title}&%20${length}recent&count=20`;
         //     console.log(title);
@@ -35,7 +35,7 @@
         /////////////////////////////
         // THIS IS WHAT WE WILL USE
         /////////////////////////////
-        const search = function(title) {
+        const search = function (title) {
             let exampleUrl = `https://listennotes.p.mashape.com/api/v1/search?genre_ids=68%2C82&language=English&len_max=100&len_min=2&offset=5&only_in=Only+search+in+these+fields&published_after=1390190241000&published_before=1490190241000&q=star+wars&sort_by_date=0&type=episode`;
             let req = {
                 method: 'GET',
@@ -43,31 +43,30 @@
                 headers: {
                     'X-Mashape-Key': '8bIXPUSY6Hmsh48N9SIRuhp89hoTp1Lqks5jsnps4Q3gYSWt1u',
                     'Accept': 'application/json'
-                    }
-                };
+                }
+            };
             return $http(req).then(function (response) {
                 setPodcast(response.data.results);
-                console.log(response);
+                console.log(response.data.results);
                 //setPodcast(dataFile.results);
                 //console.log(dataFile.results);
                 $location.path("/results");
                 return podcasts;
             });
         };
-
-        const genreSearch = function(genre) {
+        const genreSearch = function (genre, min, max) {
             let exampleUrl = `https://listennotes.p.mashape.com/api/v1/search?genre_ids=68%2C82&language=English&len_max=100&len_min=2&offset=5&only_in=Only+search+in+these+fields&published_after=1390190241000&published_before=1490190241000&q=star+wars&sort_by_date=0&type=episode`;
             let req = {
                 method: 'GET',
-                url: `https://listennotes.p.mashape.com/api/v1/search?genre_ids=${genre}&language=English&len_max=100&len_min=2&offset=5&only_in=Only+search+in+these+fields&published_after=1390190241000&published_before=1490190241000&q=the&sort_by_date=0&type=episode`,
+                url: `https://listennotes.p.mashape.com/api/v1/search?genre_ids=${genre}&language=English&len_max=${max}&len_min=${min}&offset=5&only_in=Only+search+in+these+fields&published_after=1390190241000&published_before=1490190241000&q=the&sort_by_date=0&type=episode`,
                 headers: {
                     'X-Mashape-Key': '8bIXPUSY6Hmsh48N9SIRuhp89hoTp1Lqks5jsnps4Q3gYSWt1u',
                     'Accept': 'application/json'
-                    }
-                };
+                }
+            };
             return $http(req).then(function (response) {
                 setPodcast(response.data.results);
-                console.log(response);
+                console.log(response.data.results);
                 //setPodcast(dataFile.results);
                 //console.log(dataFile.results);
                 $location.path("/results");
@@ -75,23 +74,14 @@
             });
         };
 
-        const secondsToMinutes = function(sec) {
-            let remainder = sec%60;
-            let minute = (sec-remainder)/60
-            return [minute, remainder];
+            return {
+                getPodcast,
+                setPodcast,
+                search,
+                genreSearch
+            }
         }
-        const minutesToSeconds = function(minute) {
-            return minutes*60;
-        }
-
-          return {
-            getPodcast,
-            setPodcast,
-            search,
-            genreSearch
-        }
-      }
         angular
-        .module("app")
-        .factory("podcastService", podcastService);
-}
+            .module("app")
+            .factory("podcastService", podcastService);
+    }

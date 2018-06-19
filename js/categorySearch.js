@@ -2,6 +2,11 @@
 {
     let categorySearch = {
         template: `
+        <input type="checkbox" ng-model="$ctrl.length" ng-true-value=[0,15]> <p>0-15 MIN</p>
+        <input type="checkbox" ng-model="$ctrl.length" ng-true-value=[16,30]> <p>15-30 MIN</p>
+        <input type="checkbox" ng-model="$ctrl.length" ng-true-value=[31,45]> <p>30-45 MIN</p>
+        <input type="checkbox" ng-model="$ctrl.length" ng-true-value=[46,60]> <p>45-60 MIN</p>
+        <input type="checkbox" ng-model="$ctrl.length" ng-true-value=[61,300]> <p>60+ MIN</p>
         <button ng-click="$ctrl.categoryButtons('67,103,101,105')">Art & Design</button>
         <button ng-click="$ctrl.categoryButtons('104')">Literature</button>
         <button ng-click="$ctrl.categoryButtons('67,93,157')">Business</button>
@@ -26,16 +31,26 @@
         `
         ,
 
+        //length checkboxes?
+
+
         controller: function (podcastService, $location) {
             let vm = this;
             vm.genre = "";
-            vm.categoryButtons = function(genre){
-                vm.categoryClick = podcastService.genreSearch(genre);
-                vm.categoryClick.then(function(){
+            vm.length = "";
+            vm.categoryButtons = function (genre) {
+                let min = vm.length[0];
+                let max = vm.length[1];
+                vm.categoryClick = podcastService.genreSearch(genre, min, max);
+                vm.categoryClick.then(function () {
+                    console.log(genre, min, max);
                     $location.path("/results");
                 });
-
             }
+            
+                
+
+            
         }
     };
 

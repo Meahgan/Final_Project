@@ -6,7 +6,6 @@
         <div ng-repeat="pc in $ctrl.results | filter: searchText track by $index">
         <p>{{pc.title_original}}</p>
         <p>{{pc.audio_length}}</p>
-        <img src="{{pc.image}}">
         </div>
         `
         ,

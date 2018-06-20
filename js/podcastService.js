@@ -17,6 +17,18 @@
         const setPodcast = function (newPodcast) {
             podcasts = newPodcast;
         }
+        let podList = [];
+
+        const getList = function() {
+            return podList;
+        }
+        const addPodcast = function (newPod) {
+            podList.push(newPod);
+            console.log(podList);
+        }
+        const removePodcast = function (index){
+            podList.splice(index,1);
+        }
 
 
         // Temp Search FAKE API Function - so as to not go over API request Limit
@@ -96,6 +108,9 @@
             return {
                 getPodcast,
                 setPodcast,
+                getList,
+                addPodcast,
+                removePodcast,
                 search,
                 genreSearch,
                 surveySearch

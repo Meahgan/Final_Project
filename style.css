@@ -1,8 +1,54 @@
+/*----------TAGS------------*/
+body {
+    display: flex;
+    justify-content: flex-end;
+}
 a {
     text-decoration: none;
+    padding: 15px;
+    margin-top: 10px;
 }
 
+button {
+
+
+}
+
+input {
+
+
+}
+
+#links {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/*----------home.js------------*/
+
+#home {
+    display: flex;
+
+    justify-content: center;
+
+   
+}
+
+
+/*----------yourList.js------------*/
 
 #podcasts {
-    
+
 }
+
+.homeLink {
+
+}
+
+/*----------survey.js------------*/
+
+#survey {
+
+}
+
+

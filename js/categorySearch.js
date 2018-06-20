@@ -44,10 +44,7 @@
                     $location.path("/results");
                 });
             }
-            
-                
-
-            
+         
         }
     };
 

@@ -10,7 +10,7 @@
     <button>Health</button> <button>Money</button>
     <br>
     <br>
-    <input type="button" ng-click="surveyAnser()" value="SUBMIT YOUR SURVEY">`,
+    <input type="button" ng-click="surveyAnswer()" value="SUBMIT YOUR SURVEY">`,
     controller: function(){
 
     }

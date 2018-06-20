@@ -1,5 +1,5 @@
 {
-    "genres": [
+    "genres" = [
         {
             "parent_id": 127,
             "id": 139,

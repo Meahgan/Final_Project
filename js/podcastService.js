@@ -74,11 +74,31 @@
             });
         };
 
+        const surveySearch = function(genre, min, max){
+          let req = {
+            method: 'GET',
+            url: `https://listennotes.p.mashape.com/api/v1/search?genre_ids=${genre}&language=English&len_max=${max}&len_min=${min}&offset=5&only_in=Only+search+in+these+fields&published_after=1390190241000&published_before=1490190241000&q=the&sort_by_date=0&type=episode`,
+            headers: {
+                'X-Mashape-Key': '8bIXPUSY6Hmsh48N9SIRuhp89hoTp1Lqks5jsnps4Q3gYSWt1u',
+                'Accept': 'application/json'
+            }
+          };
+          return $http(req).then(function (response) {
+              setPodcast(response.data.results);
+              console.log(response.data.results);
+              //setPodcast(dataFile.results);
+              //console.log(dataFile.results);
+              $location.path("/results");
+              return podcasts;
+          });
+      };
+
             return {
                 getPodcast,
                 setPodcast,
                 search,
-                genreSearch
+                genreSearch,
+                surveySearch
             }
         }
         angular

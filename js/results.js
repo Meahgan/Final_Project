@@ -12,6 +12,7 @@
 
         controller: function (podcastService, $location) {
             let vm = this;
+            vm.podcasts ="";
             vm.results = podcastService.getPodcast();
         }
     };

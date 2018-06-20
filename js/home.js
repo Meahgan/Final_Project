@@ -2,15 +2,19 @@
 {
   let home = {
     template: `
-      <div id="home">
-        <div class="searchTitle">
-          <input ng-model="title" placeholder="Search Titles"/>
-          <button class="button" ng-click="$ctrl.searchBar(title)">GO</button>
-          <br>
-         <a href=#!/categorySearch><button>Search by Category</button></a>
-        </div>
+      <div class="links">
+        <a class="navBar" href="#!/Home">Home</a>
+        <a class="navBar" href="#!/Account">Account</a>
+        <a class="navBar" href="#!/yourList">My Podcasts</a>
       </div>
-        
+      
+      <div class="searchTitle">
+        <h1 class="titleBars">Cool Name</h1>
+        <span><input class="searchBar" ng-model="title" placeholder="Search Titles"/>
+        <button class="goBtn" ng-click="$ctrl.searchBar(title)">GO</button></span>
+        <a href="#!/survey"><button class="searchBtns">Survey</button></a>
+        <a href=#!/categorySearch><button class="searchBtns">Search by Category</button></a>
+      </div>        
         `
     ,
     //this will call the search title & length function

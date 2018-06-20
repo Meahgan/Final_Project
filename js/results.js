@@ -2,12 +2,24 @@
 {
     let results = {
         template: `
-        <input ng-model="searchText" placeholder="Filter your results..." />
-        <div ng-repeat="pc in $ctrl.results | filter: searchText track by $index">
-        <p>{{pc.title_original}}</p>
-        <p>{{pc.audio_length}}</p>
-        <p>{{pc.description_original}}</p>
-        <button ng-click="$ctrl.listInfo(pc)">ADD</button>
+        <div class="links">
+            <a class="navBar" href="#!/Home">Home</a>
+            <a class="navBar" href="#!/Account">Account</a>
+            <a class="navBar" href="#!/yourList">My Podcasts</a>
+        </div>
+        <h1 class="titleBars">Here's What We Got From Your Search: </h1>
+        <input id="filter" ng-model="searchText" placeholder="Filter your results..." />
+        <div class="result" ng-repeat="pc in $ctrl.results | filter: searchText track by $index">
+            <div class="leftHalf">
+                <p>Title: </p>
+                <p>{{pc.title_original}}</p>
+                <span>Length: {{pc.audio_length}}</span>
+                <button id="addBtn" ng-click="$ctrl.listInfo(pc)">+</button>
+            </div>
+            <div class="rightHalf">
+                <p>Description: </p>
+                <p>{{pc.description_original}}</p>
+            </div>
         </div>
         `
         ,

@@ -1,8 +1,38 @@
+/*----------TAGS------------*/
+
 a {
     text-decoration: none;
 }
 
+button {
 
-#podcasts {
+}
+
+input {
+
+}
+
+/*----------home.js------------*/
+
+#searchTitle {
     
 }
+
+
+/*----------yourList.js------------*/
+
+#podcasts {
+
+}
+
+.homeLink {
+
+}
+
+/*----------survey.js------------*/
+
+#survey {
+
+}
+
+

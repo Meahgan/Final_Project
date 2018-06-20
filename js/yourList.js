@@ -5,26 +5,20 @@
 		<div id="podcasts">
 		<h1>My Podcast List</h1>
 		<div class="homeLink"><a href="index.html">Hunt for Podcasts!</a></div>
-		<p>{{}}
-		
-		
-		
+		<div ng-repeat="pods in $ctrl.list">
+		<p>{{pods.title}}</p>
+		<p>{{pods.length}}</p>
+		<button ng-click="$ctrl.remove($index)">Remove</button>
 		</div>
-		{{2+2}}`,
+		</div>
+		`,
 		controller: function(podcastService, $location) {
 			let vm = this;
-			vm.list = podcastService.getPodcast();
-            vm.listinfo = function(podcasts) {
-                let x =
-                {title: title_original,
-                length: audio_duration,
-                genre: category,
-				img: img_url,
-				description: description_original 
-				}
+			vm.list = podcastService.getList();
+			vm.remove = function (index) {
+				podcastService.removePodcast(index);
+			}
 
-                vm.addPodcast = podcastService.addList(x);
-            };
 
 		}
 	};

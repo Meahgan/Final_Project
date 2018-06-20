@@ -17,9 +17,17 @@
         const setPodcast = function (newPodcast) {
             podcasts = newPodcast;
         }
+        let podList = [];
 
-        const addPodcast = function () {
-            console.log("working");
+        const getList = function() {
+            return podList;
+        }
+        const addPodcast = function (newPod) {
+            podList.push(newPod);
+            console.log(podList);
+        }
+        const removePodcast = function (index){
+            podList.splice(index,1);
         }
 
 
@@ -100,6 +108,9 @@
             return {
                 getPodcast,
                 setPodcast,
+                getList,
+                addPodcast,
+                removePodcast,
                 search,
                 genreSearch,
                 surveySearch

@@ -4,7 +4,6 @@
         template: `
         <div class="searchTitle">
           <input ng-model="title" placeholder="Search Titles"/>
-          <input ng-model="length" placeholder="search length"/>
           <button class="button" ng-click="$ctrl.searchBar(title)">GO</button>
         </div>
         <br>

@@ -7,6 +7,7 @@
         <input type="checkbox" ng-model="$ctrl.length" ng-true-value=[31,45]> <p>30-45 MIN</p>
         <input type="checkbox" ng-model="$ctrl.length" ng-true-value=[46,60]> <p>45-60 MIN</p>
         <input type="checkbox" ng-model="$ctrl.length" ng-true-value=[61,300]> <p>60+ MIN</p>
+
         <button ng-click="$ctrl.categoryButtons('67,103,101,105')">Art & Design</button>
         <button ng-click="$ctrl.categoryButtons('67,93,157')">Business</button>
         <button ng-click="$ctrl.categoryButtons('133')">Comedy</button>
@@ -25,6 +26,7 @@
         <button ng-click="$ctrl.categoryButtons('148,150')">American History</button>
         <button ng-click="$ctrl.categoryButtons('84')">Cars</button>
         <button ng-click="$ctrl.categoryButtons('69,70,71,72,73,74,75,76')">Religion</button>
+        
         `
         ,
         controller: function (podcastService, $location) {

@@ -27,10 +27,6 @@
         <button ng-click="$ctrl.categoryButtons('69,70,71,72,73,74,75,76')">Religion</button>
         `
         ,
-
-        //length checkboxes?
-
-
         controller: function (podcastService, $location) {
             let vm = this;
             vm.genre = "";
@@ -44,14 +40,6 @@
                     $location.path("/results");
                 });
             }
-<<<<<<< HEAD
-
-
-
-
-=======
-         
->>>>>>> 909a96bb2f0c7e0e254b3da4841e0e6c744c4f8f
         }
     };
 

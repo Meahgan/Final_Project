@@ -31,9 +31,6 @@
         `
         ,
 
-        //length checkboxes?
-
-
         controller: function (podcastService, $location) {
             let vm = this;
             vm.genre = "";

@@ -47,14 +47,15 @@
                     $location.path("/results");
                 });
             }
-            
-                
 
-            
+
+
+
         }
     };
 
     categorySearch.$inject = ["podcastService", "$location"];
+
     angular
         .module("app")
         .component("categorySearch", categorySearch);

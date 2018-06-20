@@ -18,6 +18,10 @@
             podcasts = newPodcast;
         }
 
+        const addPodcast = function () {
+            console.log("working");
+        }
+
 
         // Temp Search FAKE API Function - so as to not go over API request Limit
         // const search = function(title, length) {

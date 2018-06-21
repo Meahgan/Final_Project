@@ -2,6 +2,7 @@
 {
   let home = {
     template: `
+    <div id="overlay">
     <div class="loader" ng-show="$ctrl.move"></div>
 
       <div class="links">
@@ -9,6 +10,12 @@
         <a class="navBar" href="#!/Account">Account</a>
         <a class="navBar" href="#!/yourList">My Podcasts</a>
       </div>
+
+      <h1 id="homeTitle"><em>SIFT</em></h1>
+      <div class="tagline"><p>A better way to search for your next podcast</p></div>
+      
+      <div id="homeContainer">
+      <div id="home">
       <div class="timeTable"><p>How much time do you have?</p></div>
       <div class="minuteBoxHolder">
             <span class="minuteBoxes"><input type="checkbox" ng-model="$ctrl.length" ng-true-value=[0,15]> <span>0-15</span></span>
@@ -19,7 +26,7 @@
         </div>
       
       <div class="searchTitle">
-        <h1 class="titleBars">SIFT</h1><p>A better way to search for your next podcast</p>
+        
         <span><input class="searchBar" ng-model="title" placeholder="Search Titles"/>
       
         <button class="goBtn" ng-click="$ctrl.searchBar(title); $ctrl.wow()">GO</button></span>
@@ -27,7 +34,10 @@
         <a href="#!/survey"><button class="surveyBtn" ng-click="$ctrl.wow()">SURVEY</button></a>
         <a href=#!/categorySearch><button class="searchBtn" ng-click="$ctrl.wow()">SEARCH CATEGORIES</button></a>
         </div>
-      </div>      
+        </div>
+        </div>
+      </div> 
+      </div>     
         `
     ,
     //this will call the search title & length function

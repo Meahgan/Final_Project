@@ -18,7 +18,7 @@
             </div>
             <div class="rightHalf">
                 <p>Description: </p>
-                <p>{{pc.description_original}}</p>
+                <textarea readonly rows="5" cols="70" class="description">{{pc.description_original}}</textarea>
             </div>
         </div>
         `

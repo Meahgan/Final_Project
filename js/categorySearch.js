@@ -31,12 +31,12 @@
             <p>Cars</p>
             </div>
 
-            <div class="icons">
+            <div class="icons" ng-click="$ctrl.categoryButtons('133')">
             <img src="comedy.svg" alt="comedy">
             <p>Comedy</p>
             </div>
 
-            <div class="icons" ng-click="$ctrl.categoryButtons('133')">
+            <div class="icons" ng-click="$ctrl.categoryButtons('111')">
             <img src="education.svg" alt="education">
             <p>Education</p>
             </div>

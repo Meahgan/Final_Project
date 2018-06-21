@@ -2,6 +2,7 @@
 {
   let home = {
     template: `
+    <div id="overlay">
     <div class="loader" ng-show="$ctrl.move"></div>
 
       <div class="links">
@@ -10,6 +11,11 @@
         <a class="navBar" href="#!/yourList">My Podcasts</a>
       </div>
 
+      <h1 id="homeTitle"><em>SIFT</em></h1>
+      <div class="tagline"><p>A better way to search for your next podcast</p></div>
+
+      <div id="homeContainer">
+      <div id="home">
       <div class="timeTable"><p>How much time do you have?</p></div>
       <div class="minuteBoxHolder">
             <span class="minuteBoxes"><input type="checkbox" ng-model="$ctrl.length" ng-true-value=[0,15]> <span>0-15</span></span>
@@ -30,6 +36,7 @@
         </div>
         </div>
         </div>
+      </div>
       </div>
         `
     ,

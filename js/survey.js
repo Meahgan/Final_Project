@@ -2,13 +2,15 @@
 {
   let survey = {
     template: `
+    <div class="loader" ng-show="$ctrl.move"></div>
+
     <div class="links">
       <a class="navBar" href="#!/Home">Home</a>
       <a class="navBar" href="#!/Account">Account</a>
       <a class="navBar" href="#!/yourList">My Podcasts</a>
     </div>
-    <h1 class="titleBars">Cool Survey Name</h1>
-    <div id="survey">
+    <h1 class="titleBars" ng-hide="$ctrl.move">Cool Survey Name</h1>
+    <div id="survey" ng-hide="$ctrl.move">
       <div>
         <h3>I Would Use a Podcasts To..</h3>
         <input type="checkbox" ng-model="$ctrl.survey" ng-true-value="[67, 93, 94, 95, 147, 149, 187, 111, 127, 125, 107, 125, 163]"><span>Learn</span> <input type="checkbox" ng-model="$ctrl.survey" ng-true-value="[133, 68, 82, 138, 134, 167, 168, 84, 88]"><span>Be Entertained</span>
@@ -29,7 +31,9 @@
       vm.survey = "";
       vm.survey2 = "";
       vm.survey3 = "";
+      vm.move = false;
       vm.surveyAnswer = function(survey, survey2, survey3){
+        vm.move = true;
         console.log(survey);
         console.log(vm.survey);
         let surveys = survey + survey2 + survey3;
@@ -41,6 +45,7 @@
       }
 
     }
+
 
   }
   survey.$inject = ["podcastService", "$location"];

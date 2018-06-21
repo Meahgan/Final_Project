@@ -19,8 +19,13 @@
 }
 
 body {
+    background-color: #f2f2f2;
     background-image: url("doggo.jpg");
-   
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
 }
 /*----------home.js------------*/
 
@@ -32,6 +37,7 @@ body {
     flex-direction: column;
     width: 45%;
     font-family: 'Varela Round', sans-serif;
+    margin-top: 20%;
 }
 .surveyBtn {
     margin-top: 10px;
@@ -56,6 +62,7 @@ body {
     width: 100%;
     font-family: 'Varela Round', sans-serif;
     border: none;
+    outline: none;
 }
 /* .searchBtns {
     margin-top: 10px;
@@ -86,13 +93,14 @@ body {
     color: white;
     border: none;
     font-family: 'Varela Round', sans-serif;
+    outline: none;
 }
 /*----------yourList.js------------*/
 .removeBtn {
     width: 20px;
     height: 20px;
     margin-left: 10%;
-    border-radius: 100%;
+    border-radius: 50%;
     border: none;
     background-color: #d2232a;
     color: white;
@@ -102,6 +110,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    outline: none;
 }
 
 
@@ -124,6 +133,7 @@ body {
     border: none;
     border-radius: 10px;
     padding: 10px;
+    outline: none;
 }
 /*----------categorySearch.js------------*/
 /* .categoryBtns {
@@ -222,6 +232,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    outline: none;
 }
 #filter {
     margin-left: 5%;

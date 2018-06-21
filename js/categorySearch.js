@@ -19,7 +19,7 @@
         <div id="categories">
 
             <div id="art">
-            <div id="art"><img src="art.svg" alt="art"></div>
+            <img src="art.svg" alt="art">
             <button class="artBtn" ng-click="$ctrl.categoryButtons('67,103,101,105')">Art & Design</button>
             </div>
 

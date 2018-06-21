@@ -34,7 +34,7 @@
                 title: podcasts.title_original,
                 length: podcasts.audio_duration,
                 genre: podcasts.category,
-				img: podcasts.img_url,
+                img: podcasts.img_url,
 				description: podcasts.description_original 
 				}
 

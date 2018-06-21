@@ -31,6 +31,7 @@
         }
 
 
+
         // Temp Search FAKE API Function - so as to not go over API request Limit
         // const search = function(title, length) {
         //     let url = `https://api.ottoradio.com/v1/podcasts?query=&type=${title}&%20${length}recent&count=20`;
@@ -98,11 +99,9 @@
           return $http(req).then(function (response) {
               setPodcast(response.data.results);
               console.log(response.data.results);
-              //setPodcast(dataFile.results);
-              //console.log(dataFile.results);
               $location.path("/results");
               return podcasts;
-          });
+          })
       };
 
             return {

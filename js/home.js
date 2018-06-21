@@ -9,7 +9,12 @@
         <a class="navBar" href="#!/Account">Account</a>
         <a class="navBar" href="#!/yourList">My Podcasts</a>
       </div>
-<<<<<<< HEAD
+
+      <h1><em>SIFT</em></h1>
+      <div class="tagline"><p>A better way to search for your next podcast</p></div>
+      
+      <div id="homeContainer">
+      <div id="home">
       <div class="timeTable"><p>How much time do you have?</p></div>
       <div class="minuteBoxHolder">
             <span class="minuteBoxes"><input type="checkbox" ng-model="$ctrl.length" ng-true-value=[0,15]> <span>0-15</span></span>
@@ -20,7 +25,7 @@
         </div>
       
       <div class="searchTitle">
-        <h1 class="titleBars">SIFT</h1><p>A better way to search for your next podcast</p>
+        
         <span><input class="searchBar" ng-model="title" placeholder="Search Titles"/>
       
         <button class="goBtn" ng-click="$ctrl.searchBar(title); $ctrl.wow()">GO</button></span>
@@ -28,18 +33,9 @@
         <a href="#!/survey"><button class="surveyBtn" ng-click="$ctrl.wow()">SURVEY</button></a>
         <a href=#!/categorySearch><button class="searchBtn" ng-click="$ctrl.wow()">SEARCH CATEGORIES</button></a>
         </div>
+        </div>
+        </div>
       </div>      
-=======
-
-      <div class="searchTitle" ng-hide="$ctrl.move">
-        <h1 class="titleBars">Cool Name</h1>
-        <span><input class="searchBar" ng-model="title" placeholder="Search Titles"/>
-        <button class="goBtn" ng-click="$ctrl.searchBar(title)">GO</button></span>
-        <a href="#!/survey"><button class="searchBtns">Survey</button></a>
-        <a href=#!/categorySearch><button class="searchBtns">Search by Category</button></a>
-      </div>
-    </div>
->>>>>>> 8cea77c4c428ed767747aadaac214dd7b6f7904c
         `
     ,
     //this will call the search title & length function

@@ -3,29 +3,78 @@
     display: flex;
     justify-content: flex-end;
 }
+a {
+    color: white;
+}
 .navBar{
     text-decoration: none;
     padding: 15px;
     margin-top: 10px;
     font-family: 'Varela Round', sans-serif;
+    font-size: 20px;
 }
-.titleBars {
-    text-align: center;
-    font-family: 'Varela Round', sans-serif;
+
+h1 {
+    display: block;
+    position: static;
+    font-family: 'Fredoka One', cursive;
+    color:white;
+    letter-spacing: 2px;
+    font-size: 100px;
+    z-index: 1;
+    margin-left: 30px;
 }
+
+.minuteBoxHolder{
+    /* display: flex;
+    justify-content: center; */
+    /* margin-left: 20%; */
+}
+
+.timeTable {
+    /* margin-top: 20px; */
+    font-family: 'Fredoka One', cursive;
+    color:gray;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
 .minuteBoxes {
     font-family: 'Varela Round', sans-serif;
     color: #d2232a;
 }
 
 body {
-    background-color: #f2f2f2;
     background-image: url("doggo.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    background-color: lightgrey;
+    z-index: -1;
+}
 
+.tagline {
+    display: block;
+    position: static;
+    color:white;
+    letter-spacing: 2px;
+    font-size: 30px;
+    z-index: 1;
+    font-family: 'Varela Round', sans-serif;
+    margin-left: 30px;
+
+}
+
+#home {
+    display: flex;
+    align-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    z-index: 0;
+    background-color: whitesmoke;
+  
 }
 /*----------home.js------------*/
 
@@ -38,6 +87,7 @@ body {
     width: 45%;
     font-family: 'Varela Round', sans-serif;
     margin-top: 20%;
+    z-index: 0;
 }
 .surveyBtn {
     margin-top: 10px;
@@ -45,11 +95,12 @@ body {
     padding-bottom: 10px;
     border-radius: 15px;
     background-color: #d2232a;
-    color: white;
+    color:gray;
     font-size: 24px;
     width: 100%;
     font-family: 'Varela Round', sans-serif;
     border: none;
+    z-index: 0;
 }
 .searchBtn {
     margin-top: 10px;
@@ -63,6 +114,7 @@ body {
     font-family: 'Varela Round', sans-serif;
     border: none;
     outline: none;
+    z-index: 0;
 }
 /* .searchBtns {
     margin-top: 10px;
@@ -83,6 +135,7 @@ body {
     padding-bottom: 5px;
     border-radius: 10px;
     font-family: 'Varela Round', sans-serif;
+    z-index: 0;
 }
 .goBtn {
     background-color: #d2232a;
@@ -112,7 +165,18 @@ body {
     align-items: center;
     outline: none;
 }
+/*------loading picture-------- */
 
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('http://superstorefinder.net/support/wp-content/uploads/2018/01/blue_loading.gif') 50% 50% no-repeat rgb(249,249,249);
+    opacity: .8;
+}
 
 /*----------survey.js------------*/
 #survey {
@@ -152,13 +216,13 @@ body {
 .minuteBoxHolder {
     display: flex;
     justify-content: flex-start;
-    margin-left: 15%;
+    /* margin-left: 15%; */
     /* margin-bottom: 30px; */
     color: #58595b;
 
 }
 .minuteBoxes {
-    margin-left: 10px;
+    /* margin-left: 10px; */
     margin-right: 20px;
     margin-bottom: 30px;
 }
@@ -291,6 +355,7 @@ img {
         display: flex;
         justify-content: center;
         font-family: 'Varela Round', sans-serif;
+        
     }
 
     .minuteBoxHolder {

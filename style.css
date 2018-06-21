@@ -16,7 +16,6 @@
 .minuteBoxes {
     font-family: 'Varela Round', sans-serif;
     color: #d2232a;
-
 }
 
 body {
@@ -40,7 +39,19 @@ body {
     font-family: 'Varela Round', sans-serif;
     margin-top: 20%;
 }
-.searchBtns {
+.surveyBtn {
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+    background-color: #d2232a;
+    color: white;
+    font-size: 24px;
+    width: 100%;
+    font-family: 'Varela Round', sans-serif;
+    border: none;
+}
+.searchBtn {
     margin-top: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -53,6 +64,18 @@ body {
     border: none;
     outline: none;
 }
+/* .searchBtns {
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+    background-color: #d2232a;
+    color: white;
+    font-size: 24px;
+    width: 100%;
+    font-family: 'Varela Round', sans-serif;
+    border: none;
+} */
 .searchBar {
     width: 85%;
     padding-left: 5px;
@@ -110,7 +133,6 @@ body {
     color: white;
     border: none;
     border-radius: 10px;
-    margin-top: 25px;
     padding: 10px;
     outline: none;
 }
@@ -132,7 +154,7 @@ body {
     display: flex;
     justify-content: flex-start;
     margin-left: 15%;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     color: #58595b;
 
 }
@@ -142,10 +164,10 @@ body {
     margin-bottom: 30px;
 }
 .categoryTitles {
+    margin-top: 40px;
     font-family: 'Varela Round', sans-serif;
-    margin-left: 15%;
+    margin-left: 10%;
     color: #58595b;
-
 }
 #categories {
     padding: 50px;
@@ -232,6 +254,161 @@ img {
     max-width: 75ch;
 }
 /*------loading picture-------- */
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('http://superstorefinder.net/support/wp-content/uploads/2018/01/blue_loading.gif') 50% 50% no-repeat rgb(249,249,249);
+    opacity: .8;
+}
+/*---------------------MEDIA QUERY-----------------------*/
+
+@media only screen and (max-width: 600px) {
+
+
+    .titleBars {
+        text-align: center;
+        font-family: 'Varela Round', sans-serif;
+    }
+  
+    .links {
+        display: flex;
+        background-color: white;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 170px;
+        align-items: center;
+        color: #58595b;
+    }
+    .navBar{
+        text-decoration: none;
+        padding: 5px;
+        margin-bottom: 10px;
+        /* margin-top: 5px; */
+        font-family: 'Varela Round', sans-serif;
+    }
+
+    a:hover{
+        color:  #d2232a;
+    }
+
+    a:visited{
+        color: #58595b;    
+    }
+
+    a:active {
+        color:  #d2232a;
+    }
+
+    .timeTable {
+        margin-top: 20px;
+        margin-left: 20px;
+        display: flex;
+        justify-content: center;
+        font-family: 'Varela Round', sans-serif;
+    }
+
+    .minuteBoxHolder {
+    
+        display: flex;
+        width: 80%;
+        font-size:11px;
+        color: #58595b;
+    }
+
+    .minuteBoxes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #callBtns {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+
+    }
+    .goBtn {
+        background-color: #d2232a;
+        padding: 5px;
+        width: 100%;
+        font-size: 10px;
+        border-radius: 10px;
+        color: white;
+        border: none;
+        outline: none;
+        font-family: 'Varela Round', sans-serif;
+    }
+
+    .searchBtn {
+        background-color: gray;
+        /* padding: 5px; */
+        width: 100%;
+        font-size: 10px;
+        border-radius: 10px;
+        color: white;
+        border: none;
+        outline: none;
+        /* letter-spacing: 1px; */
+        font-size: 10px;
+        font-family: 'Varela Round', sans-serif;
+    }
+    
+  
+    .surveyBtn {
+        background-color: gray;
+        /* padding: 5px; */
+        width: 100%;
+        font-size: 10px;
+        border-radius: 10px;
+        color: white;
+        border: none;
+        outline: none;
+        /* letter-spacing: 1px; */
+        font-size: 10px;
+        font-family: 'Varela Round', sans-serif;
+        
+    }
+    .searchBar {
+        width: 95%;
+        padding-bottom: 5px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        border: 1px solid gray;
+        font-family: 'Varela Round', sans-serif;
+    }
+   
+
+    #categories{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 2px;
+        
+    }
+
+    img {
+        width: 40px;
+        height: auto;
+    }
+
+    .icons {
+        /* width: 300px; */
+        /* display: flex;
+        flex-direction: column; */
+        /* align-items: center; */
+        font-family: 'Varela Round', sans-serif;
+        font-size: 14px;
+        cursor: pointer;
+        /* margin-right: 80px;; */
+    }
+    
 
 .loader {
     position: fixed;

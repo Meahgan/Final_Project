@@ -36,8 +36,8 @@
                 title: podcasts.title_original,
                 length: podcasts.audio_duration,
                 genre: podcasts.category,
-				img: podcasts.img_url,
-				description: podcasts.description_original
+                img: podcasts.img_url,
+				description: podcasts.description_original 
 				}
 
                 vm.addPodcast = podcastService.addPodcast(x);

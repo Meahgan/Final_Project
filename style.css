@@ -64,14 +64,23 @@ body {
     font-family: 'Varela Round', sans-serif;
 }
 /*----------yourList.js------------*/
-#removeBtn {
+.removeBtn {
+    width: 20px;
+    height: 20px;
     margin-left: 10%;
-    border-radius: 50%;
+    border-radius: 100%;
     border: none;
     background-color: #d2232a;
     color: white;
     font-size: 18px;
     font-family: 'Varela Round', sans-serif;
+<<<<<<< HEAD
+=======
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+>>>>>>> 6a77828fe1a2acc646dbbc4675d6c5c8811dec43
 }
 
 
@@ -143,6 +152,7 @@ img {
     width: 80px;
     height: auto;
 }
+<<<<<<< HEAD
 /*------ART & DESIGN BUTTON------*/
 
 #art {
@@ -317,184 +327,20 @@ img {
     color: #58595b;
 }
 /*------MOVIES BUTTON------*/
+=======
+/*------ICON BUTTONS------*/
+>>>>>>> 6a77828fe1a2acc646dbbc4675d6c5c8811dec43
 
-#movies {
+.icons {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     margin: 20px;
     padding: 10px;
-}
-.movieBtn{
-    display: flex;
-    margin-top: 10px;
     font-family: 'Varela Round', sans-serif;
     font-size: 20px;
-    border:none;
-    outline:none;
-    background-color: 	 #f2f2f2;
-    color: #58595b;
-}
-/*------MUSIC BUTTON------*/
-#music {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 20px;
-    padding: 10px;
-}
-.musicBtn{
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    font-family: 'Varela Round', sans-serif;
-    font-size: 20px;
-    border:none;
-    outline:none;
-    background-color: 	 #f2f2f2;
-    color: #58595b;
-}
-
-/*------NEWS & POLITICS BUTTON------*/
-
-#politics {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 20px;
-    margin-left: 20px;
-    padding: 10px;
-
-}
-.politicsBtn{
-    margin-top: 10px;
-
-    font-family: 'Varela Round', sans-serif;
-    font-size: 20px;
-    border:none;
-    outline:none;
-    background-color: 	 #f2f2f2;
-    color: #58595b;
-}
-/*------PLACES & TRAVEL BUTTON------*/
-
-#travel {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 20px;
-    margin-left: 30px;
-    padding: 10px;
-}
-.travelBtn{
-    display: flex;
-    margin-top: 10px;
-    font-family: 'Varela Round', sans-serif;
-    font-size: 20px;
-    border:none;
-    outline:none;
-    background-color: 	 #f2f2f2;
-    color: #58595b;
-}
-/*------RELIGION BUTTON------*/
-
-#religion {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 20px;
-    padding: 10px;
-}
-.religionBtn{
-    margin-top: 10px;
-
-    font-family: 'Varela Round', sans-serif;
-    font-size: 20px;
-    border:none;
-    outline:none;
-    background-color: 	 #f2f2f2;
-    color: #58595b;
-}
-/*------SCIENCE BUTTON------*/
-
-#science {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 20px;
-    padding: 10px;
-}
-.scienceBtn{
-    margin-top: 10px;
-
-    font-family: 'Varela Round', sans-serif;
-    font-size: 20px;
-    border:none;
-    outline:none;
-    background-color: 	 #f2f2f2;
-    color: #58595b;
-}
-/*------SOCIETY & CULTURE BUTTON------*/
-
-#society {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 20px;
-    padding-left: 30px;
-    padding: 10px;
-
-}
-.societyBtn{
-    margin-top: 10px;
-    font-family: 'Varela Round', sans-serif;
-    font-size: 20px;
-    border:none;
-    outline:none;
-    background-color: 	 #f2f2f2;
-    color: #58595b;
-}
-/*------SPORTS BUTTON------*/
-
-#sports {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 20px;
-    padding-left: 35px;
-    padding: 10px;
-
-}
-.sportsBtn{
-    margin-top: 10px;
-    font-family: 'Varela Round', sans-serif;
-    font-size: 20px;
-    border:none;
-    outline:none;
-    background-color: 	 #f2f2f2;
-    color: #58595b;
-}
-
-
-
-
-/*------TECH BUTTON------*/
-
-#tech {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 20px;
-    padding: 10px;
-}
-.techBtn{
-    margin-top: 10px;
-    font-family: 'Varela Round', sans-serif;
-    font-size: 20px;
-    border:none;
-    outline:none;
-    background-color: 	 #f2f2f2;
-    color: #58595b;
+    cursor: pointer;
 }
 /*----------results.js------------*/
 .result {
@@ -519,7 +365,9 @@ img {
 .rightHalf {
     width: 55%;
 }
-#addBtn {
+.addBtn {
+    width: 22px;
+    height: 22px;
     margin-left: 10%;
     border-radius: 50%;
     border: none;
@@ -527,6 +375,10 @@ img {
     color: white;
     font-size: 18px;
     font-family: 'Varela Round', sans-serif;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #filter {
     margin-left: 5%;

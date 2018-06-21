@@ -74,13 +74,11 @@ body {
     color: white;
     font-size: 18px;
     font-family: 'Varela Round', sans-serif;
-<<<<<<< HEAD
-=======
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
->>>>>>> 6a77828fe1a2acc646dbbc4675d6c5c8811dec43
+
 }
 
 
@@ -152,7 +150,7 @@ img {
     width: 80px;
     height: auto;
 }
-<<<<<<< HEAD
+
 /*------ART & DESIGN BUTTON------*/
 
 #art {
@@ -327,9 +325,9 @@ img {
     color: #58595b;
 }
 /*------MOVIES BUTTON------*/
-=======
+
 /*------ICON BUTTONS------*/
->>>>>>> 6a77828fe1a2acc646dbbc4675d6c5c8811dec43
+
 
 .icons {
     display: flex;
@@ -390,9 +388,7 @@ img {
     border-radius: 10px;
     font-family: 'Varela Round', sans-serif;
 }
-img{
-  border-style: dotted;
-}
+
 /*------loading picture-------- */
 
 .loader {

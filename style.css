@@ -64,14 +64,20 @@ body {
     font-family: 'Varela Round', sans-serif;
 }
 /*----------yourList.js------------*/
-#removeBtn {
+.removeBtn {
+    width: 20px;
+    height: 20px;
     margin-left: 10%;
     border-radius: 50%;
     border: none;
     background-color: #d2232a;
     color: white;
     font-size: 18px;
-    font-family: 'Varela Round', sans-serif;   
+    font-family: 'Varela Round', sans-serif;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -143,358 +149,18 @@ img {
     width: 80px;
     height: auto;
 }
-/*------ART & DESIGN BUTTON------*/
+/*------ICON BUTTONS------*/
 
-#art {
+.icons {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     margin: 20px;
     padding: 10px;
-}
-.artBtn{
-    margin-top: 10px;
-    height: auto;
     font-family: 'Varela Round', sans-serif;
     font-size: 20px;
-    border:none;
-    outline:none;
-    background-color: 	 #f2f2f2;
-    color: #58595b;
-}
-.artBtn:hover{
-    color:#d2232a;
-}
-/*------BIZ BUTTON------*/
-
-#biz {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 20px;
-    padding: 10px;
-   
-}
-.bizBtn{
-    margin-top: 10px;
-    font-family: 'Varela Round', sans-serif;
-    font-size: 20px;
-    border:none;
-    outline:none;
-    background-color: 	 #f2f2f2;
-    color: #58595b;
-}
-
-/*------CARS BUTTON------*/
-
-#cars {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 20px;
-    padding: 10px;
-   
-}
-.carsBtn{
-    margin-top: 10px;
-    font-family: 'Varela Round', sans-serif;
-    font-size: 20px;
-    border:none;
-    outline:none;
-    background-color: 	 #f2f2f2;
-    color: #58595b;
-}
-/*------COMDEY BUTTON------*/
-
-#comedy {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 20px;
-    padding: 10px;
-}
-.comedyBtn{
-    margin-top: 10px;
-    font-family: 'Varela Round', sans-serif;
-    font-size: 20px;
-    border:none;
-    outline:none;
-    background-color: 	 #f2f2f2;
-    color: #58595b;
-}
-/*------EDUCATION BUTTON------*/
-
-#education {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 20px;
-    margin-left: 25px;
-    padding: 10px;
-}
-.educationBtn{
-    margin-top: 10px;
-    font-family: 'Varela Round', sans-serif;
-    font-size: 20px;
-    border:none;
-    outline:none;
-    background-color: 	 #f2f2f2;
-    color: #58595b;
-}
-
-/*------FITNESS BUTTON------*/
-
-#fitness {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 20px;
-    margin-left: 60px;
-    padding: 10px;
-}
-.fitnessBtn{
-    margin-top: 10px;
-    font-family: 'Varela Round', sans-serif;
-    font-size: 20px;
-    border:none;
-    outline:none;
-    background-color: 	 #f2f2f2;
-    color: #58595b;
-}
-/*------FOOD BUTTON------*/
-
-#food {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 20px;
-    padding: 10px;
-}
-.foodBtn{
-    margin-top: 10px;
-    font-family: 'Varela Round', sans-serif;
-    font-size: 20px;
-    border:none;
-    outline:none;
-    background-color: 	 #f2f2f2;
-    color: #58595b;
-}
-/*------HISTORY BUTTON------*/
-
-#history {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 20px;
-    padding: 10px;
-}
-.historyBtn{
-    margin-top: 10px;
-    font-family: 'Varela Round', sans-serif;
-    font-size: 20px;
-    border:none;
-    outline:none;
-    background-color: 	 #f2f2f2;
-    color: #58595b;
-}
-/*------HOBBIES BUTTON------*/
-
-#hobbies {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 20px;
-    padding: 10px;
-}
-.hobbiesBtn{
-    display: flex;
-    margin-top: 10px;
-    font-family: 'Varela Round', sans-serif;
-    font-size: 20px;
-    border:none;
-    outline:none;
-    background-color: 	 #f2f2f2;
-    color: #58595b;
-}
-/*------MOVIES BUTTON------*/
-
-#movies {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 20px;
-    padding: 10px;
-}
-.movieBtn{
-    display: flex;
-    margin-top: 10px;
-    font-family: 'Varela Round', sans-serif;
-    font-size: 20px;
-    border:none;
-    outline:none;
-    background-color: 	 #f2f2f2;
-    color: #58595b;
-}
-/*------MUSIC BUTTON------*/
-#music {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 20px;
-    padding: 10px;
-}
-.musicBtn{
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    font-family: 'Varela Round', sans-serif;
-    font-size: 20px;
-    border:none;
-    outline:none;
-    background-color: 	 #f2f2f2;
-    color: #58595b;
-}
-
-/*------NEWS & POLITICS BUTTON------*/
-
-#politics {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 20px;
-    margin-left: 20px;
-    padding: 10px;
-
-}
-.politicsBtn{
-    margin-top: 10px;
-
-    font-family: 'Varela Round', sans-serif;
-    font-size: 20px;
-    border:none;
-    outline:none;
-    background-color: 	 #f2f2f2;
-    color: #58595b;
-}
-/*------PLACES & TRAVEL BUTTON------*/
-
-#travel {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 20px;
-    margin-left: 30px;
-    padding: 10px;
-}
-.travelBtn{
-    display: flex;
-    margin-top: 10px;
-    font-family: 'Varela Round', sans-serif;
-    font-size: 20px;
-    border:none;
-    outline:none;
-    background-color: 	 #f2f2f2;
-    color: #58595b;
-}
-/*------RELIGION BUTTON------*/
-
-#religion {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 20px;
-    padding: 10px;
-}
-.religionBtn{
-    margin-top: 10px;
-
-    font-family: 'Varela Round', sans-serif;
-    font-size: 20px;
-    border:none;
-    outline:none;
-    background-color: 	 #f2f2f2;
-    color: #58595b;
-}
-/*------SCIENCE BUTTON------*/
-
-#science {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 20px;
-    padding: 10px;
-}
-.scienceBtn{
-    margin-top: 10px;
-
-    font-family: 'Varela Round', sans-serif;
-    font-size: 20px;
-    border:none;
-    outline:none;
-    background-color: 	 #f2f2f2;
-    color: #58595b;
-}
-/*------SOCIETY & CULTURE BUTTON------*/
-
-#society {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 20px;
-    padding-left: 30px;
-    padding: 10px;
-
-}
-.societyBtn{
-    margin-top: 10px;
-    font-family: 'Varela Round', sans-serif;
-    font-size: 20px;
-    border:none;
-    outline:none;
-    background-color: 	 #f2f2f2;
-    color: #58595b;
-}
-/*------SPORTS BUTTON------*/
-
-#sports {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 20px;
-    padding-left: 35px;
-    padding: 10px;
-
-}
-.sportsBtn{
-    margin-top: 10px;
-    font-family: 'Varela Round', sans-serif;
-    font-size: 20px;
-    border:none;
-    outline:none;
-    background-color: 	 #f2f2f2;
-    color: #58595b;
-}
-
-
-
-
-/*------TECH BUTTON------*/
-
-#tech {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 20px;
-    padding: 10px;
-}
-.techBtn{
-    margin-top: 10px;
-    font-family: 'Varela Round', sans-serif;
-    font-size: 20px;
-    border:none;
-    outline:none;
-    background-color: 	 #f2f2f2;
-    color: #58595b;
+    cursor: pointer;
 }
 /*----------results.js------------*/
 .result {
@@ -519,14 +185,20 @@ img {
 .rightHalf {
     width: 55%;
 }
-#addBtn {
+.addBtn {
+    width: 22px;
+    height: 22px;
     margin-left: 10%;
     border-radius: 50%;
     border: none;
     background-color: #00aeef;
     color: white;
     font-size: 18px;
-    font-family: 'Varela Round', sans-serif;   
+    font-family: 'Varela Round', sans-serif;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #filter {
     margin-left: 5%;

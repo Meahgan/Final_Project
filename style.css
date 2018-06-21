@@ -60,6 +60,7 @@ body {
     padding-bottom: 5px;
     border-radius: 10px;
     font-family: 'Varela Round', sans-serif;
+    outline: none;
 }
 .goBtn {
     background-color: #d2232a;
@@ -230,6 +231,15 @@ img {
     background-color: #f2f2f2;
     max-width: 75ch;
 }
-.descriptionUpdater {
+/*------loading picture-------- */
 
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('http://superstorefinder.net/support/wp-content/uploads/2018/01/blue_loading.gif') 50% 50% no-repeat rgb(249,249,249);
+    opacity: .8;
 }

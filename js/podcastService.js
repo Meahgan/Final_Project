@@ -30,7 +30,10 @@
             podList.splice(index,1);
         }
 
-
+        let music = document.getElementById("myAudio");
+        const play = function() {
+            music.play();
+        }
         // Temp Search FAKE API Function - so as to not go over API request Limit
         // const search = function(title, length) {
         //     let url = `https://api.ottoradio.com/v1/podcasts?query=&type=${title}&%20${length}recent&count=20`;
@@ -79,30 +82,27 @@
             return $http(req).then(function (response) {
                 setPodcast(response.data.results);
                 console.log(response.data.results);
-                //setPodcast(dataFile.results);
-                //console.log(dataFile.results);
                 $location.path("/results");
                 return podcasts;
             });
         };
 
         const surveySearch = function(genre, min, max){
-          let req = {
+        let offset = Math.floor(Math.random() * 500);
+        let req = {
             method: 'GET',
-            url: `https://listennotes.p.mashape.com/api/v1/search?genre_ids=${genre}&language=English&len_max=${max}&len_min=${min}&offset=5&only_in=Only+search+in+these+fields&published_after=1390190241000&published_before=1490190241000&q=the&sort_by_date=0&type=episode`,
+            url: `https://listennotes.p.mashape.com/api/v1/search?genre_ids=${genre}&language=English&len_max=${max}&len_min=${min}&offset=${offset}&only_in=Only+search+in+these+fields&published_after=1390190241000&published_before=1490190241000&q=the&sort_by_date=0&type=episode`,
             headers: {
                 'X-Mashape-Key': '8bIXPUSY6Hmsh48N9SIRuhp89hoTp1Lqks5jsnps4Q3gYSWt1u',
                 'Accept': 'application/json'
             }
-          };
-          return $http(req).then(function (response) {
-              setPodcast(response.data.results);
-              console.log(response.data.results);
-              //setPodcast(dataFile.results);
-              //console.log(dataFile.results);
-              $location.path("/results");
-              return podcasts;
-          });
+        };
+        return $http(req).then(function (response) {
+            setPodcast(response.data.results);
+            console.log(response.data.results);
+            $location.path("/results");
+            return podcasts;
+        });
       };
 
             return {
@@ -111,6 +111,7 @@
                 getList,
                 addPodcast,
                 removePodcast,
+                play,
                 search,
                 genreSearch,
                 surveySearch

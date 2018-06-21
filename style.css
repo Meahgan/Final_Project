@@ -78,7 +78,7 @@ body {
     width: 100%;
     z-index: 0;
     background-color: whitesmoke;
-  
+
 }
 /*----------home.js------------*/
 
@@ -325,7 +325,7 @@ img {
         text-align: center;
         font-family: 'Varela Round', sans-serif;
     }
-  
+
     .links {
         display: flex;
         background-color: white;
@@ -350,7 +350,7 @@ img {
     }
 
     a:visited{
-        color: #58595b;    
+        color: #58595b;
     }
 
     a:active {
@@ -363,11 +363,11 @@ img {
         display: flex;
         justify-content: center;
         font-family: 'Varela Round', sans-serif;
-        
+
     }
 
     .minuteBoxHolder {
-    
+
         display: flex;
         width: 80%;
         font-size:11px;
@@ -410,8 +410,8 @@ img {
         font-size: 10px;
         font-family: 'Varela Round', sans-serif;
     }
-    
-  
+
+
     .surveyBtn {
         background-color: gray;
         /* padding: 5px; */
@@ -424,7 +424,7 @@ img {
         /* letter-spacing: 1px; */
         font-size: 10px;
         font-family: 'Varela Round', sans-serif;
-        
+
     }
     .searchBar {
         width: 95%;
@@ -436,14 +436,14 @@ img {
         border: 1px solid gray;
         font-family: 'Varela Round', sans-serif;
     }
-   
+
 
     #categories{
         display: flex;
         flex-wrap: wrap;
         width: 100%;
         padding: 2px;
-        
+
     }
 
     img {
@@ -461,7 +461,12 @@ img {
         cursor: pointer;
         /* margin-right: 80px;; */
     }
-    
 
+.checkbox{
+  position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
 }
-

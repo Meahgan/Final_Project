@@ -13,10 +13,8 @@
             <div class="leftHalf">
                 <p>Title: </p>
                 <p>{{pc.title_original}}</p>
-                <span>Length: {{pc.audio_length}}</span>
-                <p>{{pc.audio}}</p>
-                <button class="playBtn">Play</button>
-                <button id="addBtn" ng-click="$ctrl.listInfo(pc)">+</button>
+                <audio src="{{pc.audio}}" controls></audio>
+                <div class="addBtn" ng-click="$ctrl.listInfo(pc)"><p>+</p></div>
             </div>
             <div class="rightHalf">
                 <p>Description: </p>

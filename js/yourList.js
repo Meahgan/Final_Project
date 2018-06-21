@@ -13,7 +13,7 @@
 			<div class="leftHalf">
 				<p>Title: </p><p>{{pods.title}}</p>
 				<span>Length: {{pods.length}}</span>
-				<button id="removeBtn" ng-click="$ctrl.remove($index)">-</button>
+				<div class="removeBtn" ng-click="$ctrl.remove($index)"><p>-</p></div>
 			</div>
 			<div class="rightHalf">
 				<p>Description: </p>

@@ -33,7 +33,7 @@
         console.log(survey);
         console.log(vm.survey);
         let surveys = survey + survey2 + survey3;
-        vm.surveyClick = podcastService.genreSearch(surveys);
+        vm.surveyClick = podcastService.surveySearch(surveys);
         vm.surveyClick.then(function () {
           console.log(surveys);
           $location.path("/results");

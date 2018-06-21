@@ -14,7 +14,7 @@ a {
     font-size: 20px;
 }
 
-h1 {
+#homeTitle {
     display: block;
     position: static;
     font-family: 'Fredoka One', cursive;
@@ -23,6 +23,7 @@ h1 {
     font-size: 100px;
     z-index: 1;
     margin-left: 30px;
+    text-shadow: 4px 1px 13px rgba(0, 0, 0, 1);
 }
 
 .minuteBoxHolder{
@@ -45,6 +46,8 @@ h1 {
 }
 
 body {
+    margin: 0;
+    padding: 0;
     background-image: url("doggo.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
@@ -63,6 +66,7 @@ body {
     z-index: 1;
     font-family: 'Varela Round', sans-serif;
     margin-left: 30px;
+    text-shadow: 4px 1px 13px rgba(150, 150, 150, 1);
 
 }
 
@@ -86,8 +90,8 @@ body {
     flex-direction: column;
     width: 45%;
     font-family: 'Varela Round', sans-serif;
-    margin-top: 20%;
     z-index: 0;
+    margin-bottom: 5%;
 }
 .surveyBtn {
     margin-top: 10px;
@@ -136,6 +140,7 @@ body {
     border-radius: 10px;
     font-family: 'Varela Round', sans-serif;
     z-index: 0;
+    outline: none;
 }
 .goBtn {
     background-color: #d2232a;
@@ -308,6 +313,9 @@ img {
     border-radius: 10px;
     font-family: 'Varela Round', sans-serif;
 }
+#overlay {
+    background-color: rgba(79,73,85,0.3);
+}
 /*---------------------MEDIA QUERY-----------------------*/
 
 @media only screen and (max-width: 600px) {
@@ -456,3 +464,4 @@ img {
     
 
 }
+

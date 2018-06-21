@@ -20,7 +20,7 @@
             </div>
             <div class="rightHalf">
                 <p>Description: </p>
-                <p>{{pc.description_original}}</p>
+                <textarea readonly rows="5" cols="70" class="description">{{pc.description_original}}</textarea>
             </div>
         </div>
         `
@@ -36,8 +36,8 @@
                 title: podcasts.title_original,
                 length: podcasts.audio_duration,
                 genre: podcasts.category,
-				img: podcasts.img_url,
-				description: podcasts.description_original
+                img: podcasts.img_url,
+				description: podcasts.description_original 
 				}
 
                 vm.addPodcast = podcastService.addPodcast(x);

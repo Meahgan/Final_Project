@@ -10,14 +10,27 @@
         <a class="navBar" href="#!/yourList">My Podcasts</a>
       </div>
 
-      <div class="searchTitle" ng-hide="$ctrl.move">
-        <h1 class="titleBars">Cool Name</h1>
+      <div class="timeTable"><p>How much time do you have?</p></div>
+      <div class="minuteBoxHolder">
+            <span class="minuteBoxes"><input type="checkbox" ng-model="$ctrl.length" ng-true-value=[0,15]> <span>0-15</span></span>
+            <span class="minuteBoxes"><input type="checkbox" ng-model="$ctrl.length" ng-true-value=[16,30]> <span>15-30</span></span>
+            <span class="minuteBoxes"><input type="checkbox" ng-model="$ctrl.length" ng-true-value=[31,45]> <span>30-45</span></span>
+            <span class="minuteBoxes"><input type="checkbox" ng-model="$ctrl.length" ng-true-value=[46,60]> <span>45-60</span></span>
+            <span class="minuteBoxes"><input type="checkbox" ng-model="$ctrl.length" ng-true-value=[61,300]> <span>60+</span></span>
+        </div>
+
+      <div class="searchTitle">
+
         <span><input class="searchBar" ng-model="title" placeholder="Search Titles"/>
-        <button class="goBtn" ng-click="$ctrl.searchBar(title)" ng-click="$ctrl.wow()">GO</button></span>
-        <a href="#!/survey"><button class="searchBtns" ng-click="$ctrl.wow()">Survey</button></a>
-        <a href=#!/categorySearch><button class="searchBtns" ng-click="$ctrl.wow()">Search by Category</button></a>
+      
+        <button class="goBtn" ng-click="$ctrl.searchBar(title); $ctrl.wow()">GO</button></span>
+        <div id="searchBtn">
+        <a href="#!/survey"><button class="surveyBtn" ng-click="$ctrl.wow()">SURVEY</button></a>
+        <a href=#!/categorySearch><button class="searchBtn" ng-click="$ctrl.wow()">SEARCH CATEGORIES</button></a>
+        </div>
+        </div>
+        </div>
       </div>
-    </div>
         `
     ,
     //this will call the search title & length function

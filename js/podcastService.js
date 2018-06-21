@@ -17,6 +17,7 @@
         const setPodcast = function (newPodcast) {
             podcasts = newPodcast;
         }
+
         let podList = [];
 
         const getList = function() {

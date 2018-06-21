@@ -3,7 +3,7 @@
     let results = {
         template: `
         
-
+        <div class="overlay">
         <div class="links">
             <a class="navBar" href="#!/Home">Home</a>
             <a class="navBar" href="#!/Account">Account</a>
@@ -13,15 +13,17 @@
         <input id="filter" ng-model="searchText" placeholder="Filter your results..." />
         <div class="result" ng-repeat="pc in $ctrl.results | filter: searchText track by $index">
             <div class="leftHalf">
-                <p>Title: </p>
                 <p>{{pc.title_original}}</p>
+                <div class="podChoices">
                 <audio src="{{pc.audio}}" controls></audio>
-                <div class="addBtn" ng-click="$ctrl.listInfo(pc)"><p>+</p></div>
+                <div class="addBtn" ng-click="$ctrl.listInfo(pc)" ng-hide="pc.saved"><p>+</p></div>
+                </div>
             </div>
             <div class="rightHalf">
                 <p>Description: </p>
                 <textarea readonly rows="5" cols="70" class="description">{{pc.description_original}}</textarea>
             </div>
+        </div>
         </div>
         `
         ,
@@ -31,6 +33,7 @@
             vm.podcasts ="";
             vm.results = podcastService.getPodcast();
             vm.listInfo = function(podcasts) {
+                podcasts.saved = true;
                 let x =
                 {
                 title: podcasts.title_original,

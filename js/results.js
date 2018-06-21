@@ -2,6 +2,8 @@
 {
     let results = {
         template: `
+        
+
         <div class="links">
             <a class="navBar" href="#!/Home">Home</a>
             <a class="navBar" href="#!/Account">Account</a>
@@ -35,7 +37,7 @@
                 length: podcasts.audio_duration,
                 genre: podcasts.category,
 				img: podcasts.img_url,
-				description: podcasts.description_original 
+				description: podcasts.description_original
 				}
 
                 vm.addPodcast = podcastService.addPodcast(x);

@@ -2,11 +2,14 @@
 {
     let categorySearch = {
         template: `
+        <div class="loader" ng-show="$ctrl.move"></div>
+
         <div class="links">
           <a class="navBar" href="#!/Home">Home</a>
           <a class="navBar" href="#!/Account">Account</a>
           <a class="navBar" href="#!/yourList">My Podcasts</a>
         </div>
+        <div ng-hide="$ctrl.move">
         <h1 class="categoryTitles">Minutes</h1>
         <div class="minuteBoxHolder">
             <span class="minuteBoxes"><input type="checkbox" ng-model="$ctrl.length" ng-true-value=[0,15]> <span>0-15</span></span>
@@ -75,7 +78,7 @@
             <img src="travel.svg" alt="travel">
             <p>Places & Travel</p>
             </div>
-            
+
             <div class="icons" ng-click="$ctrl.categoryButtons('99,117,151')">
             <img src="politics.svg" alt="politics">
             <p>News & Politics</p>
@@ -107,13 +110,16 @@
             </div>
 
         </div>
+        </div>
         `
         ,
         controller: function (podcastService, $location) {
             let vm = this;
             vm.genre = "";
             vm.length = "";
+            vm.move = false;
             vm.categoryButtons = function (genre) {
+              vm.move = true;
                 let min = vm.length[0];
                 let max = vm.length[1];
                 vm.categoryClick = podcastService.genreSearch(genre, min, max);

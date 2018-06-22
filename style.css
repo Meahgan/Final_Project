@@ -27,8 +27,6 @@ a:hover {
     background-color: whitesmoke;
     min-height: 100vh;
     min-width: 100%;
-    overflow-x: hidden; 
-    padding-right: 15%;
 }
 #blank a {
     color: #58595b;
@@ -49,7 +47,6 @@ a:hover {
 .minuteBoxHolder{
     display: flex;
     justify-content: center;
-     margin-left: 40%; 
 }
 
 .timeTable {
@@ -231,8 +228,6 @@ body {
 .minuteBoxHolder {
     display: flex;
     justify-content: flex-start;
-    /* margin-left: 15%; */
-    /* margin-bottom: 30px; */
     color: #58595b;
 
 }
@@ -248,8 +243,6 @@ body {
     color: #58595b;
 }
 #categories {
-    padding: 50px;
-    margin: auto;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -386,8 +379,15 @@ audio {
      font-size:11px;
      color: #58595b;
  }
+/*-------------DESKTOP MEDIA QUERY-----------------------*/
+@media only screen and (min-width: 601px){
 
-/*---------------------MEDIA QUERY-----------------------*/
+}
+/*--------------TABLET MEDIA QUERY-----------------------*/
+@media only screen and (min-width: 10000px){
+
+}
+/*--------------MOBILE MEDIA QUERY-----------------------*/
 
 @media only screen and (max-width: 600px) {
 
@@ -446,7 +446,6 @@ audio {
     }
 
     .minuteBoxes {
-        margin-left: 10%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -519,7 +518,6 @@ audio {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
-        padding: 2px;
         
     }
     .addBtn {

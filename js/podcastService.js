@@ -35,17 +35,6 @@
         const play = function() {
             music.play();
         }
-        // Temp Search FAKE API Function - so as to not go over API request Limit
-        // const search = function(title, length) {
-        //     let url = `https://api.ottoradio.com/v1/podcasts?query=&type=${title}&%20${length}recent&count=20`;
-        //     console.log(title);
-        //     // console.log(length);
-        //     return $http.get(url).then(function (response){
-
-        //             setPodcast(dataFile.results);
-        //             $location.path("/results");
-        //         return podcasts;
-        //     })
 
 
         /////////////////////////////

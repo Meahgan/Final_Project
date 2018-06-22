@@ -382,8 +382,6 @@ audio {
     align-items: center;
 }
 
-<<<<<<< HEAD
-=======
 .result {
     background-color: whitesmoke;
 }
@@ -399,7 +397,6 @@ audio {
      color: #58595b;
  }
 
->>>>>>> 6fcbc30abe7ffd3cdddd65d279d7a0ea3841f893
 /*---------------------MEDIA QUERY-----------------------*/
 
 @media only screen and (max-width: 600px) {

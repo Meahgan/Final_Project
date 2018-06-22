@@ -21,7 +21,7 @@
 	                		<p>-</p>
 	                	</div>
 	            	</div>
-	        	</div>
+				</div>
 	            <div class="rightHalf">
 	                <p>Description: </p>
 	                <textarea readonly rows="5" cols="70" class="description">{{pods.description_original}}</textarea>

@@ -1,4 +1,3 @@
-
 /*----------GLOBAL TAGS------------*/
 .links {
     display: flex;
@@ -222,7 +221,6 @@ body {
     font-size: 21px;
 }
 .minuteBoxes {
-    /* margin-left: 10px; */
     margin-right: 20px;
     margin-bottom: 30px;
 }
@@ -241,10 +239,6 @@ body {
     width: 100%;
 }
 
-/*img {
-    width: 80px;
-    height: auto;
-}*/
 /*------ICON BUTTONS------*/
 
 .icons {
@@ -253,7 +247,6 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 18%;
- /*   margin: 20px;*/
     padding: 10px;
     font-family: 'Varela Round', sans-serif;
     font-size: 20px;
@@ -380,6 +373,9 @@ audio {
     color: white;
     letter-spacing: 2px;
 }
+::placeholder {
+    color: white;
+}
 .podChoices {
     width: 90%;
     display: flex;
@@ -396,13 +392,6 @@ audio {
     border:none;
     
 }
-/* .minuteBoxHolder {
-    padding-left: 10%;
-     display: flex;
-     width: 80%;
-     font-size:11px;
-     color: #58595b;
- } */
  input[type=checkbox] {
     width: 30px;
     height: 30px;
@@ -473,7 +462,6 @@ audio {
         text-decoration: none;
         padding: 0px;
         margin-bottom: 10px;
-        /* margin-top: 5px; */
         font-family: 'Varela Round', sans-serif;
     }
 
@@ -534,14 +522,12 @@ audio {
 
     .searchBtn {
         background-color: gray;
-        /* padding: 5px; */
         width: 100%;
         font-size: 10px;
         border-radius: 10px;
         color: white;
         border: none;
         outline: none;
-        /* letter-spacing: 1px; */
         font-size: 10px;
         font-family: 'Varela Round', sans-serif;
     }
@@ -575,14 +561,12 @@ audio {
       }
     .surveyBtn {
         background-color: gray;
-        /* padding: 5px; */
         width: 100%;
         font-size: 10px;
         border-radius: 10px;
         color: white;
         border: none;
         outline: none;
-        /* letter-spacing: 1px; */
         font-size: 10px;
         font-family: 'Varela Round', sans-serif;
         
@@ -630,9 +614,9 @@ audio {
         flex-wrap: wrap;
         cursor: pointer;
         width: 80%;
-        /* margin-right: 80px;; */
         margin-right: 0%;
-
+    }
+audio {
+        width: 50%;
     }
 }
-

@@ -14,7 +14,8 @@ a {
     font-size: 20px;
 }
 .overlay {
-    background-color: rgba(79,73,85,0.3);
+    background-color: rgba(51, 54, 54, 0.5);
+    background-blend-mode: color-burn;
     min-height: 100vh;
     width: 100%;
 }
@@ -34,7 +35,7 @@ a {
     font-size: 100px;
     z-index: 1;
     margin-left: 30px;
-    text-shadow: 4px 1px 13px rgba(0, 0, 0, 1);
+    text-shadow: 4px 1px 20px rgba(0, 0, 0, .5);
 }
 
 .minuteBoxHolder{
@@ -44,7 +45,7 @@ a {
 }
 
 .timeTable {
-    /* margin-top: 20px; */
+    margin-top: 50px;
     font-family: 'Fredoka One', cursive;
     color:gray;
     font-size: 30px;
@@ -73,11 +74,12 @@ body {
     position: static;
     color:white;
     letter-spacing: 2px;
-    font-size: 30px;
+    font-size: 40px;
     z-index: 1;
     font-family: 'Varela Round', sans-serif;
     margin-left: 30px;
-    text-shadow: 4px 1px 13px rgba(150, 150, 150, 1);
+    margin-bottom: 30px;
+    text-shadow: 4px 1px 13px rgb(19, 18, 18);
 
 }
 
@@ -106,6 +108,7 @@ body {
 }
 .surveyBtn {
     margin-top: 10px;
+    margin-bottom: 15px;
     border-radius: 15px;
     background-color: #d2232a;
     color: white;
@@ -156,10 +159,12 @@ body {
     padding-left: 8px;
     padding-top: 10px;
     padding-bottom: 10px;
+    margin-bottom: 20px;
     border-radius: 15px;
     font-family: 'Varela Round', sans-serif;
     font-size: 24px;
     z-index: 0;
+    border: 1px solid gray;
     outline: none;
 }
 .goBtn {
@@ -167,11 +172,12 @@ body {
     padding: 10px;
     width: 10%;
     border-radius: 15px;
-    font-size: 24px;
+    font-size: 20px;
     color: white;
     border: none;
     font-family: 'Varela Round', sans-serif;
     outline: none;
+    margin-bottom: 20px;
 }
 /*----------yourList.js------------*/
 /*------loading picture-------- */
@@ -213,24 +219,7 @@ body {
 .answer {
     font-size: 22px;
 }
-/*input[type = 'checkbox'] {
-    height:80px;
-    width: 80px;
-}*/
-/*----------categorySearch.js------------*/
-/* .categoryBtns {
-    border: none;
-    background-color: #d2232a;
-    color: white;
-    width: 27%;
-    margin-left: 5%;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    margin-top: 2%;
-    margin-bottom: 1%;
-    border-radius: 15px;
-    font-size: 24px;
-} */
+
 .minuteBoxHolder {
     display: flex;
     justify-content: flex-start;
@@ -368,6 +357,14 @@ audio {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+.result {
+    background-color: whitesmoke;
+}
+
+.textarea {
+    border:none;
 }
 /*---------------------MEDIA QUERY-----------------------*/
 

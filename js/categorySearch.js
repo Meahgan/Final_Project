@@ -4,6 +4,7 @@
         template: `
         <div class="loader" ng-show="$ctrl.move"></div>
 
+        <div id="blank">
         <div class="links">
           <a class="navBar" href="#!/Home">Home</a>
           <a class="navBar" href="#!/Account">Account</a>
@@ -109,6 +110,7 @@
             <p>Technology</p>
             </div>
 
+        </div>
         </div>
         </div>
         `

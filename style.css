@@ -13,6 +13,17 @@ a {
     font-family: 'Varela Round', sans-serif;
     font-size: 20px;
 }
+.overlay {
+    background-color: rgba(79,73,85,0.3);
+    min-height: 100vh;
+    width: 100%;
+}
+#blank {
+    background-color: whitesmoke;
+}
+#blank a {
+    color: #58595b;
+}
 
 #homeTitle {
     display: block;
@@ -95,16 +106,16 @@ body {
 }
 .surveyBtn {
     margin-top: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
     border-radius: 15px;
     background-color: #d2232a;
-    color:gray;
+    color: white;
     font-size: 24px;
     width: 100%;
     font-family: 'Varela Round', sans-serif;
     border: none;
     z-index: 0;
+    padding: 10px;
+    outline: none;
 }
 .searchBtn {
     margin-top: 10px;
@@ -132,44 +143,37 @@ body {
     font-family: 'Varela Round', sans-serif;
     border: none;
 } */
+.search {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
 .searchBar {
     width: 85%;
-    padding-left: 5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-radius: 10px;
+    padding-left: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 15px;
     font-family: 'Varela Round', sans-serif;
+    font-size: 24px;
     z-index: 0;
     outline: none;
 }
 .goBtn {
     background-color: #d2232a;
-    padding-top: 7px;
-    padding-bottom: 7px;
+    padding: 10px;
     width: 10%;
-    border-radius: 10px;
+    border-radius: 15px;
+    font-size: 24px;
     color: white;
     border: none;
     font-family: 'Varela Round', sans-serif;
     outline: none;
 }
 /*----------yourList.js------------*/
-.removeBtn {
-    width: 20px;
-    height: 20px;
-    margin-left: 10%;
-    border-radius: 50%;
-    border: none;
-    background-color: #d2232a;
-    color: white;
-    font-size: 18px;
-    font-family: 'Varela Round', sans-serif;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    outline: none;
-}
 /*------loading picture-------- */
 
 .loader {
@@ -184,6 +188,12 @@ body {
 }
 
 /*----------survey.js------------*/
+.titleBars {
+    font-size: 60px;
+    font-family: 'Varela Round', sans-serif;
+    color: white;
+    text-align: center;
+}
 #survey {
     display: flex;
     justify-content: center;
@@ -195,15 +205,18 @@ body {
     border: 2px solid #58595b;
     border-radius: 15px;
     padding: 20px;
+    background-color: whitesmoke;
 }
-.surveyBtn {
-    background-color: #d2232a;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    padding: 10px;
-    outline: none;
+.question {
+    font-size: 36px;
 }
+.answer {
+    font-size: 22px;
+}
+/*input[type = 'checkbox'] {
+    height:80px;
+    width: 80px;
+}*/
 /*----------categorySearch.js------------*/
 /* .categoryBtns {
     border: none;
@@ -287,21 +300,34 @@ img {
 .rightHalf {
     width: 55%;
 }
-.addBtn {
-    width: 22px;
-    height: 22px;
+.addBtn, .removeBtn {
+    width: 60px;
+    height: 60px;
     margin-left: 10%;
     border-radius: 50%;
     border: none;
     background-color: #00aeef;
     color: white;
-    font-size: 18px;
+    font-size: 30px;
     font-family: 'Varela Round', sans-serif;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     outline: none;
+}
+.addBtn p, .removeBtn p{
+    margin: 0;
+    padding: 0;
+}
+.addBtn {
+    background-color: #00aeef;
+}
+.removeBtn {
+    background-color: red;
+}
+audio {
+    width: 35%;
 }
 #filter {
     margin-left: 5%;
@@ -310,8 +336,24 @@ img {
     padding-top: 5px;
     padding-bottom: 5px;
     width: 23%;
-    border-radius: 10px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px white solid;
+    background: none;
     font-family: 'Varela Round', sans-serif;
+    color: white;
+    outline: none;
+
+    width: 20%;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
 }
 .description {
     overflow: hidden;
@@ -334,6 +376,19 @@ img {
 }
 #overlay {
     background-color: rgba(79,73,85,0.3);
+::placeholder { 
+    color: white;
+
+}
+#filter:focus {
+    width: 80%;
+}
+.podChoices {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 /*---------------------MEDIA QUERY-----------------------*/
 

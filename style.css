@@ -6,6 +6,10 @@
 a {
     color: white;
 }
+
+a:hover {
+    color: rgb(5, 247, 255);
+}
 .navBar{
     text-decoration: none;
     padding: 15px;
@@ -336,7 +340,7 @@ audio {
 
     width: 20%;
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 20px;
     background-image: url('searchicon.png');
     background-position: 10px 10px; 
     background-repeat: no-repeat;
@@ -366,6 +370,14 @@ audio {
 .textarea {
     border:none;
 }
+.minuteBoxHolder {
+    padding-left: 10%;
+     display: flex;
+     width: 80%;
+     font-size:11px;
+     color: #58595b;
+ }
+
 /*---------------------MEDIA QUERY-----------------------*/
 
 @media only screen and (max-width: 600px) {
@@ -417,7 +429,7 @@ audio {
     }
 
     .minuteBoxHolder {
-    
+       padding-left: 20%;
         display: flex;
         width: 80%;
         font-size:11px;
@@ -425,6 +437,7 @@ audio {
     }
 
     .minuteBoxes {
+        margin-left: 10%;
         display: flex;
         flex-direction: column;
         align-items: center;

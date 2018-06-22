@@ -18,7 +18,7 @@
       </div>
       <div>
         <h3 class="question">Right Now, If I Could I Would..</h3>
-        <input type="checkbox" ng-model="$ctrl.survey2" ng-true-value="[69, 99, 117, 122, 123]"><span class="answer">Take a Trip to Europe</span> <input type="checkbox" ng-model="$ctrl.survey2" ng-true-value="[102, 122, 100, 101, 103, 104, 105, 140]"><span class="answer">Have a Fun Staycation</span>
+        <input type="checkbox"  ng-model="$ctrl.survey2" ng-true-value="[69, 99, 117, 122, 123]"><i class="helper"></i><span class="answer">Take a Trip to Europe</span> <input type="checkbox" ng-model="$ctrl.survey2" ng-true-value="[102, 122, 100, 101, 103, 104, 105, 140]"><span class="answer">Have a Fun Staycation</span>
       </div>
       <div>
         <h3 class="question">Do You Care More About...</h3>

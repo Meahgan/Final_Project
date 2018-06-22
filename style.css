@@ -386,6 +386,25 @@ audio {
      font-size:11px;
      color: #58595b;
  }
+ input[type=checkbox] {
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+    cursor: pointer;
+    font-size: 27px;
+  }
+  
+  
+  input[type=checkbox]:after {
+      content: " ";
+      background-color: #9FFF9D;
+      display: inline-block;
+      visibility: visible;
+  }
+  
+  input[type=checkbox]:checked:after {
+      content: "\2714";
+  }
 
 /*---------------------MEDIA QUERY-----------------------*/
 

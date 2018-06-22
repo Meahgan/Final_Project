@@ -94,7 +94,6 @@
             return podcasts;
         });
       };
-
             return {
                 getPodcast,
                 setPodcast,

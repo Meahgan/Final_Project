@@ -25,6 +25,10 @@ a:hover {
 }
 #blank {
     background-color: whitesmoke;
+    min-height: 100vh;
+    min-width: 100%;
+    overflow-x: hidden;
+    padding-right: 15%;
 }
 #blank a {
     color: #58595b;
@@ -225,21 +229,66 @@ body {
     display: inline;
     padding: 10px;
 }
-.q1{
-  margin-bottom: 15px;
-}
-input[type = 'checkbox'] {
-    height:25px;
-    width: 25px;
+
+.container input {
+    position: absolute;
+    opacity: 0;
     cursor: pointer;
-    color: blue;
 }
+
 .surveyBtn{
   margin-top: 30px;
 }
-/* .container:hover input ~ .box {
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 400px;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+.container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.container input:checked ~ .checkmark {
+    background-color: red;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.container:hover input ~ .checkmark {
     background-color: #ccc;
-} */
+}
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
 
 /*----------categorySearch.js------------*/
 /* .categoryBtns {
@@ -279,15 +328,16 @@ input[type = 'checkbox'] {
     margin: auto;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
-    width: 1250px;
-    height: auto;
+    align-items: center;
+    width: 100%;
 }
 
-img {
+/*img {
     width: 80px;
     height: auto;
-}
+}*/
 /*------ICON BUTTONS------*/
 
 .icons {
@@ -295,11 +345,16 @@ img {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin: 20px;
+    width: 18%;
+ /*   margin: 20px;*/
     padding: 10px;
     font-family: 'Varela Round', sans-serif;
     font-size: 20px;
     cursor: pointer;
+}
+.icons img {
+    width: 70%;
+
 }
 /*----------results.js------------*/
 .result {
@@ -327,7 +382,6 @@ img {
 .addBtn, .removeBtn {
     width: 60px;
     height: 60px;
-    margin-left: 10%;
     border-radius: 50%;
     border: none;
     background-color: #00aeef;
@@ -530,7 +584,12 @@ audio {
         border: 1px solid gray;
         font-family: 'Varela Round', sans-serif;
     }
-
+   .rightHalf {
+    display: none;
+   }
+   .leftHalf {
+    width: 100%;
+   }
 
     #categories{
         display: flex;
@@ -539,19 +598,27 @@ audio {
         padding: 2px;
 
     }
-
-    img {
-        width: 40px;
-        height: auto;
+    .addBtn {
+        margin-right: 20px;
+    }
+    .podChoices {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
 
+
     .icons {
-        /* width: 300px; */
-        /* display: flex;
-        flex-direction: column; */
-        /* align-items: center; */
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         font-family: 'Varela Round', sans-serif;
         font-size: 14px;
         cursor: pointer;
-        /* margin-right: 80px;; */
+    }
+    .icons img{
+        width: 80%;
     }

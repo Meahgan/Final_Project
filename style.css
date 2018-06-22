@@ -37,7 +37,6 @@ a:hover {
 #homeTitle {
     width: 1000px;
     height: 100px;
-    z-index: 1;
     margin-left: 30px;
     margin-bottom: 180px;
     
@@ -57,7 +56,7 @@ a:hover {
     font-size: 40px;
     z-index: 1;
     font-family: 'Varela Round', sans-serif;
-    margin-left: 30px;
+    margin-left: 0px;
     margin-bottom: 30px;
     text-shadow: 4px 1px 13px rgb(19, 18, 18);
 }
@@ -225,7 +224,7 @@ body {
     margin-bottom: 30px;
 }
 .categoryTitles {
-    margin-top: 40px;
+    margin-top: 5px;
     font-family: 'Varela Round', sans-serif;
     margin-left: 10%;
     color: #58595b;
@@ -246,7 +245,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 18%;
+    width: 10%;
     padding: 10px;
     font-family: 'Varela Round', sans-serif;
     font-size: 20px;
@@ -611,7 +610,7 @@ audio {
         font-size: 14px;
         flex-wrap: wrap;
         cursor: pointer;
-        width: 80%;
+        width: 27%;
         margin-right: 0%;
     }
 audio {

@@ -8,14 +8,13 @@
 
       <div class="links">
         <a class="navBar" href="#!/Home">Home</a>
-        <a class="navBar" href="#!/results">History</a>
         <a class="navBar" href="#!/Account">Account</a>
         <a class="navBar" href="#!/yourList">My Podcasts</a>
       </div>
 
       <div id="homeTitle">
       <div class="sift"><p><em>SIFT</em></p></div>
-      <div class="tagline"><p>A better way to search for your next podcast</p></div>
+      <div class="tagline"><h6>A better way to search for your next podcast</h6></div>
       </div>
      
 

@@ -27,6 +27,8 @@ a:hover {
     background-color: whitesmoke;
     min-height: 100vh;
     min-width: 100%;
+    overflow-x: hidden; 
+    padding-right: 15%;
 }
 #blank a {
     color: #58595b;
@@ -267,11 +269,16 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    width: 18%;
  /*   margin: 20px;*/
     padding: 10px;
     font-family: 'Varela Round', sans-serif;
     font-size: 20px;
     cursor: pointer;
+}
+.icons img {
+    width: 70%;
+
 }
 /*----------results.js------------*/
 .result {

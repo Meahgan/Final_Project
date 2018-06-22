@@ -1,3 +1,4 @@
+
 /*----------GLOBAL TAGS------------*/
 .links {
     display: flex;
@@ -376,9 +377,6 @@ audio {
 }
 #overlay {
     background-color: rgba(79,73,85,0.3);
-::placeholder { 
-    color: white;
-
 }
 #filter:focus {
     width: 80%;
@@ -390,6 +388,7 @@ audio {
     justify-content: space-between;
     align-items: center;
 }
+
 /*---------------------MEDIA QUERY-----------------------*/
 
 @media only screen and (max-width: 600px) {
@@ -446,6 +445,7 @@ audio {
         width: 80%;
         font-size:11px;
         color: #58595b;
+        margin-left: 10%;
     }
 
     .minuteBoxes {
@@ -526,16 +526,15 @@ audio {
     }
 
     .icons {
-        /* width: 300px; */
-        /* display: flex;
-        flex-direction: column; */
-        /* align-items: center; */
+        width: 300px;
+        display: flex;
+        flex-direction: column;
         font-family: 'Varela Round', sans-serif;
         font-size: 14px;
+        flex-wrap: wrap;
         cursor: pointer;
+        width: 30%;
         /* margin-right: 80px;; */
     }
-    
-
 }
 

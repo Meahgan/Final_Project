@@ -212,11 +212,25 @@ body {
 }
 .answer {
     font-size: 22px;
+    display: inline;
+    padding: 10px;
 }
-/*input[type = 'checkbox'] {
-    height:80px;
-    width: 80px;
-}*/
+.q1{
+  margin-bottom: 15px;
+}
+input[type = 'checkbox'] {
+    height:25px;
+    width: 25px;
+    cursor: pointer;
+    color: blue;
+}
+.surveyBtn{
+  margin-top: 30px;
+}
+/* .container:hover input ~ .box {
+    background-color: #ccc;
+} */
+
 /*----------categorySearch.js------------*/
 /* .categoryBtns {
     border: none;
@@ -349,13 +363,13 @@ audio {
     box-sizing: border-box;
     font-size: 16px;
     background-image: url('searchicon.png');
-    background-position: 10px 10px; 
+    background-position: 10px 10px;
     background-repeat: no-repeat;
     padding: 12px 20px 12px 40px;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
 }
-::placeholder { 
+::placeholder {
     color: white;
 
 }
@@ -514,12 +528,3 @@ audio {
         cursor: pointer;
         /* margin-right: 80px;; */
     }
-
-.checkbox{
-  position: absolute;
-    top: 0;
-    left: 0;
-    height: 25px;
-    width: 25px;
-    background-color: #eee;
-}

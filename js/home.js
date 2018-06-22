@@ -7,6 +7,7 @@
 
       <div class="links">
         <a class="navBar" href="#!/Home">Home</a>
+        <a class="navBar" href="#!/results">History</a>
         <a class="navBar" href="#!/Account">Account</a>
         <a class="navBar" href="#!/yourList">My Podcasts</a>
       </div>

@@ -3,6 +3,7 @@
   let home = {
     template: `
     <div class="overlay">
+
     <div class="loader" ng-show="$ctrl.move"></div>
 
       <div class="links">
@@ -11,10 +12,14 @@
         <a class="navBar" href="#!/yourList">My Podcasts</a>
       </div>
 
-      <h1 id="homeTitle"><em>SIFT</em></h1>
+      <div id="homeTitle">
+      <div class="sift"><p><em>SIFT</em></p></div>
       <div class="tagline"><p>A better way to search for your next podcast</p></div>
-      
+      </div>
+     
+
       <div id="homeContainer">
+   
       <div id="home">
       <div class="timeTable"><p>How much time do you have?</p></div>
       <div class="minuteBoxHolder">

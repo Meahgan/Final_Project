@@ -28,8 +28,6 @@ a:hover {
     background-color: whitesmoke;
     min-height: 100vh;
     min-width: 100%;
-    overflow-x: hidden; 
-    padding-right: 0%;
 }
 #blank a {
     color: #58595b;
@@ -230,8 +228,6 @@ body {
     color: #58595b;
 }
 #categories {
-    padding: 50px;
-    margin: auto;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -421,8 +417,16 @@ audio {
     display: flex;
     align-items: center;
 }
+ }
+/*-------------DESKTOP MEDIA QUERY-----------------------*/
+@media only screen and (min-width: 601px){
 
-/*---------------------MEDIA QUERY-----------------------*/
+}
+/*--------------TABLET MEDIA QUERY-----------------------*/
+@media only screen and (min-width: 10000px){
+
+}
+/*--------------MOBILE MEDIA QUERY-----------------------*/
 
 @media only screen and (max-width: 600px) {
     #blank {
@@ -583,9 +587,6 @@ audio {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
-        padding: 2px;
-        margin-right: 0%;
-
     }
     .addBtn {
         margin-right: 20px;

@@ -26,6 +26,10 @@ a:hover {
 }
 #blank {
     background-color: whitesmoke;
+    min-height: 100vh;
+    min-width: 100%;
+    overflow-x: hidden; 
+    padding-right: 0%;
 }
 #blank a {
     color: #58595b;
@@ -41,12 +45,6 @@ a:hover {
     z-index: 1;
     margin-left: 30px;
     text-shadow: 4px 1px 20px rgba(0, 0, 0, .5);
-}
-
-.minuteBoxHolder{
-    display: flex;
-    justify-content: center;
-     margin-left: 40%; 
 }
 
 .timeTable {
@@ -139,18 +137,6 @@ body {
     outline: none;
     z-index: 0;
 }
-/* .searchBtns {
-    margin-top: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 15px;
-    background-color: #d2232a;
-    color: white;
-    font-size: 24px;
-    width: 100%;
-    font-family: 'Varela Round', sans-serif;
-    border: none;
-} */
 .search {
     width: 100%;
     display: flex;
@@ -228,10 +214,9 @@ body {
 .minuteBoxHolder {
     display: flex;
     justify-content: flex-start;
-    /* margin-left: 15%; */
-    /* margin-bottom: 30px; */
     color: #58595b;
-
+    margin-left: 10%;
+    font-size: 21px;
 }
 .minuteBoxes {
     /* margin-left: 10px; */
@@ -249,15 +234,16 @@ body {
     margin: auto;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
-    width: 1250px;
-    height: auto;
+    align-items: center;
+    width: 100%;
 }
 
-img {
+/*img {
     width: 80px;
     height: auto;
-}
+}*/
 /*------ICON BUTTONS------*/
 
 .icons {
@@ -265,11 +251,16 @@ img {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin: 20px;
+    width: 18%;
+ /*   margin: 20px;*/
     padding: 10px;
     font-family: 'Varela Round', sans-serif;
     font-size: 20px;
     cursor: pointer;
+}
+.icons img {
+    width: 70%;
+
 }
 /*----------results.js------------*/
 .result {
@@ -297,7 +288,6 @@ img {
 .addBtn, .removeBtn {
     width: 60px;
     height: 60px;
-    margin-left: 10%;
     border-radius: 50%;
     border: none;
     background-color: #00aeef;
@@ -389,19 +379,55 @@ audio {
 .textarea {
     border:none;
 }
-.minuteBoxHolder {
+/* .minuteBoxHolder {
     padding-left: 10%;
      display: flex;
      width: 80%;
      font-size:11px;
      color: #58595b;
- }
+ } */
+ input[type=checkbox] {
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+    cursor: pointer;
+    font-size: 27px;
+  }
+  
+  
+  input[type=checkbox]:after {
+      content: " ";
+      display: inline-block;
+      visibility: visible;
+      width: 30px;
+      height: 30px;
+  }
+  
+  input[type=checkbox]:checked:after {
+      content: "\2714";
+      background-color: #006df0;
+      border-radius: 3px;
+      width: 30px;
+      height: 30px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+.surveyBtn{
+  margin-top: 30px;
+}
+.minuteBoxHolder span {
+    display: flex;
+    align-items: center;
+}
 
 /*---------------------MEDIA QUERY-----------------------*/
 
 @media only screen and (max-width: 600px) {
-
-
+    #blank {
+        padding-right: 0;
+    }
     .titleBars {
         text-align: center;
         font-family: 'Varela Round', sans-serif;
@@ -420,7 +446,7 @@ audio {
     }
     .navBar{
         text-decoration: none;
-        padding: 5px;
+        padding: 0px;
         margin-bottom: 10px;
         /* margin-top: 5px; */
         font-family: 'Varela Round', sans-serif;
@@ -448,16 +474,17 @@ audio {
     }
 
     .minuteBoxHolder {
-       padding-left: 20%;
         display: flex;
         width: 80%;
         font-size:11px;
         color: #58595b;
         margin-left: 10%;
+        padding-left: 0%;
+        margin-right: 0%;
     }
 
     .minuteBoxes {
-        margin-left: 10%;
+        margin-left: 0%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -493,8 +520,34 @@ audio {
         font-size: 10px;
         font-family: 'Varela Round', sans-serif;
     }
-    
-  
+    input[type=checkbox] {
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      
+      
+      input[type=checkbox]:after {
+          content: " ";
+          display: inline-block;
+          visibility: visible;
+          width: 20px;
+          height: 20px;
+      }
+      
+      input[type=checkbox]:checked:after {
+          content: "\2714";
+          background-color: #006df0;
+          border-radius: 3px;
+          width: 20px;
+          height: 20px;
+          color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      }
     .surveyBtn {
         background-color: gray;
         /* padding: 5px; */
@@ -519,20 +572,32 @@ audio {
         border: 1px solid gray;
         font-family: 'Varela Round', sans-serif;
     }
-   
+   .rightHalf {
+    display: none;
+   }
+   .leftHalf {
+    width: 100%;
+   }
 
     #categories{
         display: flex;
         flex-wrap: wrap;
         width: 100%;
         padding: 2px;
-        
+        margin-right: 0%;
+
+    }
+    .addBtn {
+        margin-right: 20px;
+    }
+    .podChoices {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
 
-    img {
-        width: 40px;
-        height: auto;
-    }
 
     .icons {
         width: 300px;
@@ -542,8 +607,10 @@ audio {
         font-size: 14px;
         flex-wrap: wrap;
         cursor: pointer;
-        width: 30%;
+        width: 80%;
         /* margin-right: 80px;; */
+        margin-right: 0%;
+
     }
 }
 

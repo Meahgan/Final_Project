@@ -2,7 +2,7 @@
 {
   let home = {
     template: `
-    <div id="overlay">
+    <div class="overlay">
     <div class="loader" ng-show="$ctrl.move"></div>
 
       <div class="links">
@@ -26,10 +26,10 @@
         </div>
 
       <div class="searchTitle">
+        
+        <div class="search"><input class="searchBar" ng-model="title" placeholder="Search Titles"/>
 
-        <span><input class="searchBar" ng-model="title" placeholder="Search Titles"/>
-      
-        <button class="goBtn" ng-click="$ctrl.searchBar(title); $ctrl.wow()">GO</button></span>
+        <button class="goBtn" ng-click="$ctrl.searchBar(title); $ctrl.wow()">GO</button></div>
         <div id="searchBtn">
         <a href="#!/survey"><button class="surveyBtn" ng-click="$ctrl.wow()">SURVEY</button></a>
         <a href=#!/categorySearch><button class="searchBtn" ng-click="$ctrl.wow()">SEARCH CATEGORIES</button></a>

@@ -13,14 +13,12 @@
 </head>
 
 <body>
-
    
-    <ng-view></ng-view>
+        <ng-view></ng-view>
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-animate.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-route.js"></script>
-    <script src="js/exampleResponse.js"></script>
     <script src="js/module.js"></script>
     <script src="js/podcastService.js"></script>
     <script src="js/home.js"></script>
@@ -29,6 +27,17 @@
     <script src="js/routing.js"></script>
     <script src="js/survey.js"></script>
     <script src="js/yourList.js"></script>
+    <script>
+            function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+    }
+    </script>
 
 </body>
 

@@ -32,6 +32,9 @@ a:hover {
 #blank a {
     color: #58595b;
 }
+#blank #main {
+    color: black;
+}
 
 #homeTitle {
     width: 100%;

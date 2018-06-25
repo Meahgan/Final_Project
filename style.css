@@ -209,6 +209,12 @@ body {
 .answer {
     font-size: 22px;
 }
+.qboxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .minuteBoxHolder {
     display: flex;
@@ -343,6 +349,7 @@ audio {
     background-color: whitesmoke;
     max-width: 75ch;
     width: 900px;
+    height: 100px;
     border: none;
     font-size: 12px;
     padding-bottom: 5%;
@@ -432,6 +439,12 @@ audio {
 }
 .minuteBoxHolder span {
     display: flex;
+    align-items: center;
+}
+.horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
 }
 /*--------------SUPER SCREEN QUERY-----------------------*/

@@ -1,0 +1,39 @@
+<div id="overlay">
+        <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a class="navBar" href="#!/Home">Home</a>
+                <a class="navBar" href="#!/Account">Account</a>
+                <a class="navBar" href="#!/yourList">My Podcasts</a>
+              </div>
+              
+              <div id="main">
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+              </div>
+        
+      <div class="links">
+        <a class="navBar" href="#!/Home">Home</a>
+        <a class="navBar" href="#!/Account">Account</a>
+        <a class="navBar" href="#!/yourList">My Podcasts</a>
+      </div>
+    
+    
+    <h1 class="titleBars">Here's What We Got From Your Search: </h1>
+    <input id="filter" ng-model="searchText" placeholder="Filter your results..." />
+    <div class="result" ng-repeat="pc in $ctrl.results | filter: searchText track by $index">
+
+        <div class="leftHalf">
+            <p>{{pc.title_original}}</p>
+            <div class="podChoices">
+                <audio src="{{pc.audio}}" controls></audio>
+                <div class="addBtn" ng-click="$ctrl.listInfo(pc)" ng-hide="pc.saved">
+                    <p>+</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="rightHalf">
+            <p>Description: </p>
+            <p readonly rows="5" cols="70" class="description">{{pc.description_original}}</p>
+        </div>
+    </div>
+    </div>

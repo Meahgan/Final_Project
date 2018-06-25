@@ -434,6 +434,10 @@ audio {
     display: flex;
     align-items: center;
 }
+.questionHolder span {
+    display: flex;
+    align-items: center;
+}
  
 /*-------------DESKTOP MEDIA QUERY-----------------------*/
 @media only screen and (min-width: 601px){

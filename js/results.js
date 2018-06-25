@@ -9,6 +9,9 @@
                 <a class="navBar" href="#!/yourList">My Podcasts</a>
             </div>
 
+
+
+
             <h1 class="titleBars">Here's What We Got From Your Search: </h1>
             <input id="filter" ng-model="searchText" placeholder="Filter your results..." />
             <div class="result" ng-repeat="pc in $ctrl.results | filter: searchText track by $index">

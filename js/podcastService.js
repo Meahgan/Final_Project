@@ -40,6 +40,7 @@
         /////////////////////////////
         // THIS IS WHAT WE WILL USE
         /////////////////////////////
+
         const search = function (title) {
             let exampleUrl = `https://listennotes.p.mashape.com/api/v1/search?genre_ids=68%2C82&language=English&len_max=100&len_min=2&offset=5&only_in=Only+search+in+these+fields&published_after=1390190241000&published_before=1490190241000&q=star+wars&sort_by_date=0&type=episode`;
             let req = {
@@ -59,6 +60,7 @@
                 return podcasts;
             });
         };
+
         const genreSearch = function (genre, min, max) {
             let exampleUrl = `https://listennotes.p.mashape.com/api/v1/search?genre_ids=68%2C82&language=English&len_max=100&len_min=2&offset=5&only_in=Only+search+in+these+fields&published_after=1390190241000&published_before=1490190241000&q=star+wars&sort_by_date=0&type=episode`;
             let req = {

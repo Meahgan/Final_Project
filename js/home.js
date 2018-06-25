@@ -26,9 +26,8 @@
         </div>
 
       <div class="searchTitle">
-        
-        <div class="search"><input class="searchBar" ng-model="title" placeholder="Search Titles"/>
 
+        <div class="search"><input class="searchBar" ng-model="title" placeholder="Search Titles"/>
         <button class="goBtn" ng-click="$ctrl.searchBar(title); $ctrl.wow()">GO</button></div>
         <div id="searchBtn">
         <a href="#!/survey"><button class="surveyBtn" ng-click="$ctrl.wow()">SURVEY</button></a>
@@ -38,11 +37,13 @@
         </div>
       </div>
       </div>
+      </div>
         `
     ,
-    //this will call the search title & length function
+    //this will call the search title function
     controller: function (podcastService, $location) {
       let vm = this;
+      vm.language = "";
       vm.podcasts = "";
       vm.move = false;
       vm.searchBar = function (title) {

@@ -10,7 +10,6 @@
         }]
 
         const getPodcast = function () {
-            // console.log(podcasts);
             return podcasts;
         }
 
@@ -25,16 +24,11 @@
         }
         const addPodcast = function (newPod) {
             podList.push(newPod);
-            console.log(podList);
         }
         const removePodcast = function (index){
             podList.splice(index,1);
         }
 
-        let music = document.getElementById("myAudio");
-        const play = function() {
-            music.play();
-        }
 
 
         /////////////////////////////
@@ -52,9 +46,6 @@
             };
             return $http(req).then(function (response) {
                 setPodcast(response.data.results);
-                console.log(response.data.results);
-                //setPodcast(dataFile.results);
-                //console.log(dataFile.results);
                 $location.path("/results");
                 return podcasts;
             });
@@ -71,7 +62,6 @@
             };
             return $http(req).then(function (response) {
                 setPodcast(response.data.results);
-                console.log(response.data.results);
                 $location.path("/results");
                 return podcasts;
             });
@@ -100,7 +90,6 @@
                 getList,
                 addPodcast,
                 removePodcast,
-                play,
                 search,
                 genreSearch,
                 surveySearch

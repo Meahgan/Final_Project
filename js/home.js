@@ -32,12 +32,12 @@
       
       <div class="searchTitle">
         
-        <div class="search"><input class="searchBar" ng-model="title" placeholder="Search Titles"/>
-      
-        <button class="goBtn" ng-click="$ctrl.searchBar(title); $ctrl.wow()">GO</button></div>
+        <div class="search">
+        <input class="searchBar" ng-model="title" placeholder="Search Titles"/>
+        <button class="goBtn" ng-click="$ctrl.searchBar(title)">GO</button></div>
         <div id="searchBtn">
-        <a href="#!/survey"><button class="surveyBtn" ng-click="$ctrl.wow()">SURVEY</button></a>
-        <a href=#!/categorySearch><button class="searchBtn" ng-click="$ctrl.wow()">SEARCH CATEGORIES</button></a>
+        <a href="#!/survey"><button class="surveyBtn">SURVEY</button></a>
+        <a href=#!/categorySearch><button class="searchBtn">SEARCH CATEGORIES</button></a>
         </div>
         </div>
         </div>
@@ -56,14 +56,9 @@
         vm.call = podcastService.search(title);
         vm.call.then(function () {
           vm.podcasts = podcastService.getPodcast();
-
           console.log(vm.podcasts);
         });
       }
-      vm.wow = function(){
-        podcastService.play();
-      }
-
     }
   };
 

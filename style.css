@@ -517,7 +517,20 @@ audio {
     .titleBars {
         text-align: center;
         font-family: 'Varela Round', sans-serif;
+        color: black;
+        font-size: 20px;
     }
+    h3.question{
+      font-size: 16px;
+    }
+    #survey{
+      border-style: none;
+      width: 90%;
+    }
+    .answer{
+      font-size: 12px;
+    }
+    
 
     .links {
         display: none;
@@ -731,6 +744,9 @@ audio {
     padding: 16px;
 }
 
+
+
+/* menu-sizing */
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}

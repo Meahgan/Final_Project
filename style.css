@@ -16,7 +16,7 @@ a:hover {
     font-family: 'Varela Round', sans-serif;
     font-size: 25px;
 }
-.overlay {
+#overlay {
     background-color: rgba(8, 8, 8, 0.4);   
     background-blend-mode: color-dodge;
     min-height: 100vh;
@@ -450,7 +450,7 @@ audio {
         display: flex;
     }
     .sift {
-        
+
     }
 
 }

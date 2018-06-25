@@ -279,6 +279,7 @@ body {
 .rightHalf {
     padding-left: 5%;
     width: 55%;
+    overflow: auto;
 }
 .addBtn, .removeBtn {
     width: 60px;
@@ -337,6 +338,7 @@ audio {
 .description {
     overflow: hidden;
     text-overflow: ellipsis;
+    white-space: nowrap;
     border: none;
     font-family: 'Varela Round', sans-serif;
     background-color: whitesmoke;
@@ -346,7 +348,10 @@ audio {
     font-size: 12px;
     padding-bottom: 5%;
     color: #58595b;
-    
+}
+.description:hover {
+    overflow: visible;
+    white-space: normal;
 }
 /*------loading picture-------- */
 .loader {
@@ -388,6 +393,11 @@ audio {
 .textarea {
     border:none;
     
+}
+.description {
+    height: 67px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
  input[type=checkbox] {
     width: 30px;

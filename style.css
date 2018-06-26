@@ -411,6 +411,15 @@ body {
     overflow: visible;
     white-space: normal;
 }
+.catIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.catIcons img {
+    width: 40px;
+}
 /*------loading picture-------- */
 .loader {
     position: fixed;

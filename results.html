@@ -34,6 +34,9 @@
         <div class="rightHalf">
             <p>Description: </p>
             <p readonly rows="5" cols="70" class="description">{{pc.description_original}}</p>
+            <div class="catIcons" ng-repeat="icon in pc.catIcons">
+                <img src="{{icon}}">
+            </div>
         </div>
     </div>
     </div>

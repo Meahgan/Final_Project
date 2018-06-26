@@ -4,7 +4,7 @@
         <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <a class="navBar" href="#!/Home">Home</a>
-                <a class="navBar" href="#!/results">History</a>
+                <a class="navBar" href="#!/results">Recent Sifts</a>
                 <a class="navBar" href="#!/yourList">My Podcasts</a>
               </div>
 
@@ -14,7 +14,7 @@
 
       <div class="links">
         <a class="navBar" href="#!/Home">Home</a>
-        <a class="navBar" href="#!/results">History</a>
+        <a class="navBar" href="#!/results">Recent Sifts</a>
         <a class="navBar" href="#!/yourList">My Podcasts</a>
       </div>
       <div id="homeTitle">
@@ -35,8 +35,8 @@
           <input class="searchBar" type="text" placeholder="Search by keyword..." ng-model="title">
           <button class="goBtn" ng-click="$ctrl.searchBar(title)">GO</button>
         </div>
-
-      <div class="minuteBoxHolder" ng-show="time" >
+        
+      <div class="minuteBoxHolderHome" ng-show="time" >
             <span class="minuteBoxes"><input type="checkbox" ng-model="$ctrl.length" ng-true-value=[0,15]> <span>0-15 min</span></span>
             <span class="minuteBoxes"><input type="checkbox" ng-model="$ctrl.length" ng-true-value=[16,30]> <span>15-30 min</span></span>
             <span class="minuteBoxes"><input type="checkbox" ng-model="$ctrl.length" ng-true-value=[31,45]> <span>30-45 min</span></span>

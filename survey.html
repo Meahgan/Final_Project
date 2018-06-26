@@ -2,7 +2,7 @@
     <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a class="navBar" href="#!/Home">Home</a>
-            <a class="navBar" href="#!/Account">Account</a>
+            <a class="navBar" href="#!/results">Recent Sifts</a>
             <a class="navBar" href="#!/yourList">My Podcasts</a>
           </div>
           
@@ -12,13 +12,21 @@
     
   <div class="links">
     <a class="navBar" href="#!/Home">Home</a>
-    <a class="navBar" href="#!/Account">Account</a>
+    <a class="navBar" href="#!/results">Recent Sifts</a>
     <a class="navBar" href="#!/yourList">My Podcasts</a>
   </div>
   <div class="loader" ng-show="$ctrl.move"></div>
 <h1 class="titleBars" ng-hide="$ctrl.move">Let's choose you a podcast</h1>
 <div id="survey" ng-hide="$ctrl.move">
   <div>
+      <h3 class="question">How much time do you have?</h3>
+      <div class="minuteBoxHolderSurvey">
+          <span class="minuteBoxesSurvey"><input type="checkbox" ng-model="$ctrl.length" ng-true-value=[0,15]> <span>0-15 min</span></span>
+          <span class="minuteBoxesSurvey"><input type="checkbox" ng-model="$ctrl.length" ng-true-value=[16,30]> <span>15-30 min</span></span>
+          <span class="minuteBoxesSurvey"><input type="checkbox" ng-model="$ctrl.length" ng-true-value=[31,45]> <span>30-45 min</span></span>
+          <span class="minuteBoxesSurvey"><input type="checkbox" ng-model="$ctrl.length" ng-true-value=[46,60]> <span>45-60 min</span></span>
+          <span class="minuteBoxesSurvey"><input type="checkbox" ng-model="$ctrl.length" ng-true-value=[61,300]> <span>60+ min</span></span>
+      </div>
     <h3 class="question">I Would Use a Podcasts To..</h3>
     <div class="horizontal">
       <div class="qboxes">

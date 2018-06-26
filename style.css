@@ -5,6 +5,7 @@
 }
 a {
     color: white;
+    text-decoration: none;
 }
 a:hover {
     color: #a0cafd;
@@ -17,8 +18,7 @@ a:hover {
     font-size: 25px;
 }
 #overlay {
-    background-color: rgba(8, 8, 8, 0.4);
-    background-blend-mode: color-dodge;
+    background-color: rgba(8, 8, 8, 0.5);
     min-height: 100vh;
     width: 100%;
 
@@ -65,9 +65,8 @@ a:hover {
 }
 
 .timeTable {
-    margin-top: 25px;
     font-family: 'Baloo', cursive;
-    color:gray;
+    color:rgb(59, 59, 59);
     font-size: 50px;
     letter-spacing: 2px;
 }
@@ -76,7 +75,32 @@ a:hover {
     font-family: 'Varela Round', sans-serif;
     color: #d2232a;
 }
-
+.minuteBoxHolderSurvey {
+    display: flex;
+    justify-content: space-around;
+}
+.minuteBoxesSurvey {
+    font-family: 'Varela Round', sans-serif;
+    color: black;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.surveyBtn {
+    font-size: 20px;
+    border-radius: 15px;
+    margin-top: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    outline: none;
+    background-color: gray;
+    border: none;
+    color: white;
+}
+.surveyBtn:hover {
+    background-color: #d2232a;
+}
 body {
     margin: 0;
     padding: 0;
@@ -97,8 +121,7 @@ body {
     align-items: center;
     width: 100%;
     z-index: 0;
-    background-color: whitesmoke;
-    opacity: .9;
+    background-color: rgba(245, 245, 245, .9);
 }
 /*----------home.js------------*/
 
@@ -118,7 +141,7 @@ body {
     margin-top: 10px;
     margin-bottom: 15px;
     border-radius: 15px;
-    background-color:  gray;
+    background-color:  teal;
     color: white;
     font-size: 15px;
     width: 25%;
@@ -132,7 +155,7 @@ body {
     margin-top: 10px;
     margin-bottom: 15px;
     border-radius: 15px;
-    background-color: gray;
+    background-color:teal;
     color: white;
     font-size: 15px;
     width: 25%;
@@ -151,7 +174,7 @@ body {
     width:70%;
 }
 .homeText {
-    color: gray;
+    color:black;
     font-family: 'Varela Round', sans-serif;
     font-size: 40px;
     margin-bottom: 20px;
@@ -160,13 +183,13 @@ body {
 .bodyCopy {
     text-align: center;
     width: 100%;
-    color: gray;
+    color:rgb(59, 59, 59);
     font-family: 'Varela Round', sans-serif;
-    font-size: 35px;
+    font-size: 24px;
     margin-top: 0px;
 }
 .fillerText {
-    color: gray;
+    color:rgb(59, 59, 59);
     font-family: 'Baloo', cursive;
     font-size: 32px;
     margin-bottom: 80px;
@@ -187,7 +210,6 @@ body {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
 }
 .searchBar {
@@ -239,7 +261,7 @@ body {
 .titleBars {
     font-size: 60px;
     font-family: 'Varela Round', sans-serif;
-    color: white;
+    color: black;
     text-align: center;
 }
 #survey {
@@ -252,7 +274,7 @@ body {
     margin: auto;
     border: 2px solid #58595b;
     border-radius: 15px;
-    padding: 20px;
+    padding: 50px;
     background-color: whitesmoke;
 }
 .question {
@@ -273,14 +295,24 @@ body {
     margin-top: 20px;
     justify-content: flex-start;
     color: #58595b;
-    font-size: 21px;
+    font-size: 16px;
+    margin-left: 10%;
 }
 .minuteBoxes {
     margin-right: 20px;
     margin-bottom: 30px;
 }
 
-
+.minuteBoxHolderHome {
+    display: flex;
+    margin-top: 20px;
+    font-size: 16px;
+    justify-content: center;
+}
+.minuteBoxHolderHome span {
+    display: flex;
+    align-self: center;
+}
 .categoryTitles {
     margin-top: 5px;
     font-family: 'Varela Round', sans-serif;
@@ -423,7 +455,7 @@ body {
     opacity: .8;
 }
 #overlay {
-    background-color: rgba(79,73,85,0.3);
+    background-color: rgba(8, 8, 8, 0.5);
 }
 #filter:focus {
     width: 80%;
@@ -516,10 +548,10 @@ body {
 /*--------------TABLET MEDIA QUERY-----------------------*/
 @media only screen and (min-width: 768px) and (max-width: 1024px){
 .sift{
-    margin-left: 15%;
+    margin-left: 8%;
 }
 .tagline {
-    margin-left: 10%;
+    margin-left: 8%;
 }
 .goBtn {
     width: 75px;
@@ -533,6 +565,39 @@ body {
     display: block;
     color: white;
 }
+.timeTable {
+    font-size: 5vw;
+}
+.bodyCopy {
+    font-size: 18px;
+    color:rgb(59, 59, 59);
+}
+#homeTitle {
+    margin-bottom: 145px;
+}
+.minuteBoxHolderHome span {
+    font-size: 14px;
+}
+.minuteBoxHolderHome {
+    padding-right: 5%;
+    width: 105%;
+}
+input[type=checkbox] {
+    width: 25px;
+    height: 25px;
+  }
+
+  input[type=checkbox]:after {
+      width: 25px;
+      height: 25px;
+  }
+
+  input[type=checkbox]:checked:after {
+      width: 25px;
+      height: 25px;
+  }
+  
+
 }
 /*--------------MOBILE MEDIA QUERY-----------------------*/
 
@@ -607,11 +672,7 @@ body {
         width: 200px;
 
     }
-    .minuteBoxHolder {
-
-        font-size: 14px;
-        margin-left: 0px;
-    }
+    
     .goBtn {
         background-color: #d2232a;
         padding: 5px;
@@ -727,6 +788,53 @@ body {
 audio {
         width: 65%;
     }
+    .sift{
+        font-size: 46px;
+      }
+      .tagline{
+        font-size: 26px;
+      }
+      .timeTable{
+        font-size: 17px;
+      }
+      .searchBar{
+        width: 100%;
+        border-radius: 0%;
+        font-size: 17px;
+      }
+      .search{
+        display: flex;
+        flex-direction: column;
+      }
+      .goBtn{
+        width: 100%;
+      }
+      .showTimeBtn{
+        width: 100%;
+      }
+      .hideTimeBtn{
+        width: 100%;
+      }
+      .fillerText{
+        font-size: 23px;
+      }
+      #lowerButtons{
+        display: flex;
+        flex-direction: column;
+      }
+      .homeIcons{
+        width: 100%;
+      }
+      .homeText{
+        font-size: 25px;
+      }
+      .bodyCopy{
+        font-size: 20px;
+      }
+      .minuteBoxHolderHome {
+        display: flex;
+        flex-direction: column;
+      }
 }
 
 /* TEMP TESTING */

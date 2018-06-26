@@ -115,7 +115,6 @@ body {
 }
 
 .showTimeBtn {
-   
     margin-top: 10px;
     margin-bottom: 15px;
     border-radius: 15px;
@@ -129,7 +128,6 @@ body {
     padding: 10px;
     outline: none;
 }
-
 .hideTimeBtn {
     margin-top: 10px;
     margin-bottom: 15px;
@@ -144,41 +142,29 @@ body {
     padding: 10px;
     outline: none;
 }
-.surveyBtn {
-    background-color: gray;
-    color: white;
-    font-size: 24px;
-    width: 100%;
-    font-family: 'Varela Round', sans-serif;
-    border: none;
-    z-index: 0;
-    padding: 10px;
-    outline: none;
-}
 #lowerButtons {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    border-radius: 15px;
-    color: white;
-    font-size: 24px;
-    font-family: 'Varela Round', sans-serif;
-    border: none;
-    outline: none;
-    z-index: 0;
-}
-.searchBtn {
-    background-color: gray;
-    color: white;
-    font-size: 24px;
+    margin-bottom: 50px;
     width: 100%;
-    font-family: 'Varela Round', sans-serif;
-    border: none;
-    z-index: 0;
-    padding: 10px;
-    outline: none;
 }
-
+.homeText {
+    color: gray;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 18px;
+}
+.homeIcons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    width: 45%;
+}
+.homeIcons img {
+    display: flex;
+    width: 45%;
+}
 .search {
     width: 100%;
     display: flex;
@@ -186,7 +172,6 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-
 .searchBar {
     width: 85%;
     padding-left: 8px;
@@ -482,9 +467,6 @@ body {
       justify-content: center;
       outline: none;
   }
-.surveyBtn{
-  margin-top: 30px;
-}
 .minuteBoxHolder span {
     display: flex;
     align-items: center;
@@ -677,7 +659,6 @@ body {
         border: none;
         outline: none;
         font-size: 10px;
-        margin-top: 5px;
         font-family: 'Varela Round', sans-serif;
 
     }
@@ -774,7 +755,7 @@ audio {
 
 
 
-/* menu-sizing */
+/* HAMBURGER MENU SIZING */
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}

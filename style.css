@@ -17,7 +17,7 @@ a:hover {
     font-size: 25px;
 }
 #overlay {
-    background-color: rgba(8, 8, 8, 0.4);   
+    background-color: rgba(8, 8, 8, 0.4);
     background-blend-mode: color-dodge;
     min-height: 100vh;
     width: 100%;
@@ -40,7 +40,7 @@ a:hover {
     width: 100%;
     height: 100px;
     margin-bottom: 180px;
-    
+
 }
 .sift {
     height: 100px;
@@ -65,7 +65,7 @@ a:hover {
 }
 
 .timeTable {
-    margin-top: 50px;
+    margin-top: 25px;
     font-family: 'Baloo', cursive;
     color:gray;
     font-size: 35px;
@@ -102,7 +102,7 @@ body {
 }
 /*----------home.js------------*/
 
-.searchTitle {
+#searchKeyword {
     display: flex;
     text-align: center;
     margin: 0 auto;
@@ -113,11 +113,39 @@ body {
     z-index: 0;
     margin-bottom: 5%;
 }
-.surveyBtn {
+
+.showTimeBtn {
+   
     margin-top: 10px;
     margin-bottom: 15px;
     border-radius: 15px;
-    background-color: #d2232a;
+    background-color:  gray;
+    color: white;
+    font-size: 15px;
+    width: 25%;
+    font-family: 'Varela Round', sans-serif;
+    border: none;
+    z-index: 0;
+    padding: 10px;
+    outline: none;
+}
+
+.hideTimeBtn {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    background-color: gray;
+    color: white;
+    font-size: 15px;
+    width: 25%;
+    font-family: 'Varela Round', sans-serif;
+    border: none;
+    z-index: 0;
+    padding: 10px;
+    outline: none;
+}
+.surveyBtn {
+    background-color: gray;
     color: white;
     font-size: 24px;
     width: 100%;
@@ -127,28 +155,38 @@ body {
     padding: 10px;
     outline: none;
 }
-.searchBtn {
-    margin-top: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+#lowerButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     border-radius: 15px;
-    background-color: #d2232a;
     color: white;
     font-size: 24px;
-    width: 100%;
     font-family: 'Varela Round', sans-serif;
     border: none;
     outline: none;
     z-index: 0;
 }
+.searchBtn {
+    background-color: gray;
+    color: white;
+    font-size: 24px;
+    width: 100%;
+    font-family: 'Varela Round', sans-serif;
+    border: none;
+    z-index: 0;
+    padding: 10px;
+    outline: none;
+}
+
 .search {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
 }
+
 .searchBar {
     width: 85%;
     padding-left: 8px;
@@ -163,7 +201,7 @@ body {
     outline: none;
 }
 .goBtn {
-    background-color: #d2232a;
+    background-color: gray;
     padding: 10px;
     width: 75px;
     height: 50px;
@@ -225,6 +263,7 @@ body {
 
 .minuteBoxHolder {
     display: flex;
+    margin-top: 20px;
     justify-content: flex-start;
     color: #58595b;
     font-size: 21px;
@@ -233,6 +272,8 @@ body {
     margin-right: 20px;
     margin-bottom: 30px;
 }
+
+
 .categoryTitles {
     margin-top: 5px;
     font-family: 'Varela Round', sans-serif;
@@ -270,7 +311,7 @@ body {
     margin-top: 20px;
     border: 2px solid #58595b;
     border-radius: 15px;
-    
+
     display: flex;
     margin-left: 5%;
     margin-right: 5%;
@@ -286,7 +327,7 @@ body {
 .leftHalf {
     width: 35%;
     padding-left: 3%;
-    
+
 }
 .rightHalf {
     padding-left: 5%;
@@ -338,7 +379,7 @@ body {
     box-sizing: border-box;
     font-size: 20px;
     background-image: url('searchicon.png');
-    background-position: 10px 10px; 
+    background-position: 10px 10px;
     background-repeat: no-repeat;
     padding: 12px 20px 12px 40px;
     -webkit-transition: width 0.4s ease-in-out;
@@ -402,7 +443,7 @@ body {
 
 .textarea {
     border:none;
-    
+
 }
 .description {
     height: 67px;
@@ -416,8 +457,8 @@ body {
     cursor: pointer;
     font-size: 27px;
   }
-  
-  
+
+
   input[type=checkbox]:after {
       content: " ";
       display: inline-block;
@@ -425,7 +466,7 @@ body {
       width: 30px;
       height: 30px;
   }
-  
+
   input[type=checkbox]:checked:after {
       content: "\2714";
       background-color: #006df0;
@@ -454,7 +495,7 @@ body {
 /*--------------SUPER SCREEN QUERY-----------------------*/
 @media only screen and (min-width:4000px){
 
-} 
+}
 /*-------------DESKTOP MEDIA QUERY-----------------------*/
 @media only screen and (min-width: 1024px) and (max-width:3999px){
     #mySidenav {
@@ -498,9 +539,13 @@ body {
     #mySidenav {
         display: block;
     }
-    #main {
+    #overlay #main {
         display: block;
         color: white;
+    }
+    #blank #main{
+      color: black;
+      display: block;
     }
     #blank {
         padding-right: 0;
@@ -508,6 +553,19 @@ body {
     .titleBars {
         text-align: center;
         font-family: 'Varela Round', sans-serif;
+        color: black;
+        font-size: 20px;
+    }
+    h3.question{
+      font-size: 16px;
+    }
+    #survey{
+      border-style: none;
+      width: 90%;
+    }
+    .answer{
+      font-size: 12px;
+      width: 140px;
     }
     #homeTitle {
         margin-bottom: 151px;
@@ -535,20 +593,13 @@ body {
     }
 
     a:visited{
-        color: #58595b;    
+        color: #58595b;
     }
 
     a:active {
         color:  #d2232a;
     }
 
-    .timeTable {
-        margin-top: 20px;
-        margin-left: 20px;
-        display: flex;
-        justify-content: center;
-        font-size: 25px;       
-    }
     #callBtns {
         display: flex;
         flex-direction: column;
@@ -592,8 +643,8 @@ body {
         cursor: pointer;
         font-size: 16px;
       }
-      
-      
+
+
       input[type=checkbox]:after {
           content: " ";
           display: inline-block;
@@ -601,7 +652,7 @@ body {
           width: 20px;
           height: 20px;
       }
-      
+
       input[type=checkbox]:checked:after {
           content: "\2714";
           background-color: #006df0;
@@ -616,7 +667,7 @@ body {
     .surveyBtn {
         background-color: #d2232a;
         width: 100%;
-        font-size: 10px;
+        font-size: 12px;
         border-radius: 10px;
         color: white;
         border: none;
@@ -624,7 +675,7 @@ body {
         font-size: 10px;
         margin-top: 5px;
         font-family: 'Varela Round', sans-serif;
-        
+
     }
     .searchBar {
         width: 95%;
@@ -717,6 +768,9 @@ audio {
     padding: 16px;
 }
 
+
+
+/* menu-sizing */
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}

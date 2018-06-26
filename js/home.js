@@ -7,11 +7,14 @@
     controller: function (podcastService, $location) {
       let vm = this;
       vm.podcasts = "";
+      vm.length = "";
       vm.move = false;
       vm.searchBar = function (title) {
         vm.move = true;
         console.log(title);
-        vm.call = podcastService.search(title);
+        let min = vm.length[0];
+        let max = vm.length[1];
+        vm.call = podcastService.search(title, min, max);
         vm.call.then(function () {
           vm.podcasts = podcastService.getPodcast();
           console.log(vm.podcasts);

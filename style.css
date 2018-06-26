@@ -318,9 +318,6 @@ body {
 .removeBtn {
     background-color: red;
 }
-audio {
-    width: 35%;
-}
 #filter {
     margin-left: 5%;
     margin-top: 5%;
@@ -676,7 +673,7 @@ audio {
         margin-right: 0%;
     }
 audio {
-        width: 50%;
+        width: 65%;
     }
 }
 

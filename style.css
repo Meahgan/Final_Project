@@ -108,7 +108,7 @@ body {
     margin: 0 auto;
     justify-content: center;
     flex-direction: column;
-    width: 45%;
+    width: 60%;
     font-family: 'Varela Round', sans-serif;
     z-index: 0;
     margin-bottom: 5%;
@@ -213,6 +213,9 @@ body {
     font-family: 'Varela Round', sans-serif;
     outline: none;
     margin-bottom: 20px;
+}
+.goBtn:hover{
+    background-color: #d2232a;
 }
 /*----------yourList.js------------*/
 /*------loading picture-------- */
@@ -607,6 +610,7 @@ body {
 
     }
     .minuteBoxHolder {
+
         font-size: 14px;
         margin-left: 0px;
     }

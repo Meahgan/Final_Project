@@ -25,14 +25,15 @@
       <div id="homeContainer">
    
       <div id="home">
-      <div class="timeTable"><p>Choose Your Search</p></div>
+      <div class="timeTable"><p>Know what you're looking for?</p></div>
 
       <div id="searchKeyword">
       <div class="searchTitle">
         
-        <div class="search"><input class="searchBar" type="text" ng-model="title" placeholder="Search Titles..." />
-      
-        <button class="goBtn" ng-click="$ctrl.searchBar(title)">GO</button></div>
+        <div class="search">
+          <input class="searchBar" type="text" placeholder="Search by keyword..." ng-model="title">
+          <button class="goBtn" ng-click="$ctrl.searchBar(title)">GO</button>
+        </div>
         
       <div class="minuteBoxHolder" ng-show="time" >
             <span class="minuteBoxes"><input type="checkbox" ng-model="$ctrl.length" ng-true-value=[0,15]> <span>0-15 min</span></span>
@@ -46,16 +47,14 @@
         <button class="hideTimeBtn" ng-click="time = false" ng-show="time">Hide Time</button>
         </div>
       </div>
-
+      <p class="fillerText">Or Search By...</p>
 
         <div id="lowerButtons">
-          <div class="homeIcons">
-              <a href="#!/survey"><img src="icons/question.svg" alt="Survey">
-              <p class="homeText">Survey</p></a>
-          </div>
+              <a class="homeIcons" href="#!/survey"><img src="icons/question.svg" alt="Survey">
+              <p class="homeText">Survey</p><p class="bodyCopy">Don't know what you want? Take our survey!</p></a>
             <a class="homeIcons" href="#!/categorySearch">
               <img src="icons/headphones.svg" alt="Search">
-              <p class="homeText"> Category Search</p>
+              <p class="homeText">Category</p><p class="bodyCopy">Search Podcasts by Category</p>
             </a>
         </div>
         </div>

@@ -18,9 +18,7 @@
           console.log(vm.podcasts);
         });
       }
-      vm.wow = function(){
-        podcastService.play();
-      }
+    
 
     }
   };

@@ -28,11 +28,6 @@
             podList.splice(index,1);
         }
 
-        let music = document.getElementById("myAudio");
-        const play = function() {
-            music.play();
-        }
-
 
         /////////////////////////////
         // THIS IS WHAT WE WILL USE
@@ -95,7 +90,6 @@
                 getList,
                 addPodcast,
                 removePodcast,
-                play,
                 search,
                 genreSearch,
                 surveySearch

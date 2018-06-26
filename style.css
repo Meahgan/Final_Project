@@ -17,7 +17,7 @@ a:hover {
     font-size: 25px;
 }
 #overlay {
-    background-color: rgba(8, 8, 8, 0.4);   
+    background-color: rgba(8, 8, 8, 0.4);
     background-blend-mode: color-dodge;
     min-height: 100vh;
     width: 100%;
@@ -40,7 +40,7 @@ a:hover {
     width: 100%;
     height: 100px;
     margin-bottom: 180px;
-    
+
 }
 .sift {
     height: 100px;
@@ -266,7 +266,7 @@ body {
     margin-top: 20px;
     border: 2px solid #58595b;
     border-radius: 15px;
-    
+
     display: flex;
     margin-left: 5%;
     margin-right: 5%;
@@ -282,7 +282,7 @@ body {
 .leftHalf {
     width: 35%;
     padding-left: 3%;
-    
+
 }
 .rightHalf {
     padding-left: 5%;
@@ -337,7 +337,7 @@ audio {
     box-sizing: border-box;
     font-size: 20px;
     background-image: url('searchicon.png');
-    background-position: 10px 10px; 
+    background-position: 10px 10px;
     background-repeat: no-repeat;
     padding: 12px 20px 12px 40px;
     -webkit-transition: width 0.4s ease-in-out;
@@ -401,7 +401,7 @@ audio {
 
 .textarea {
     border:none;
-    
+
 }
 .description {
     height: 67px;
@@ -415,8 +415,8 @@ audio {
     cursor: pointer;
     font-size: 27px;
   }
-  
-  
+
+
   input[type=checkbox]:after {
       content: " ";
       display: inline-block;
@@ -424,7 +424,7 @@ audio {
       width: 30px;
       height: 30px;
   }
-  
+
   input[type=checkbox]:checked:after {
       content: "\2714";
       background-color: #006df0;
@@ -453,7 +453,7 @@ audio {
 /*--------------SUPER SCREEN QUERY-----------------------*/
 @media only screen and (min-width:4000px){
 
-} 
+}
 /*-------------DESKTOP MEDIA QUERY-----------------------*/
 @media only screen and (min-width: 1024px) and (max-width:3999px){
     #mySidenav {
@@ -482,9 +482,13 @@ audio {
     #mySidenav {
         display: block;
     }
-    #main {
+    #overlay #main {
         display: block;
         color: white;
+    }
+    #blank #main{
+      color: black;
+      display: block;
     }
     #blank {
         padding-right: 0;
@@ -492,8 +496,22 @@ audio {
     .titleBars {
         text-align: center;
         font-family: 'Varela Round', sans-serif;
+        color: black;
+        font-size: 20px;
     }
-  
+    h3.question{
+      font-size: 16px;
+    }
+    #survey{
+      border-style: none;
+      width: 90%;
+    }
+    .answer{
+      font-size: 12px;
+      width: 140px;
+    }
+
+
     .links {
         display: none;
         background-color: white;
@@ -517,7 +535,7 @@ audio {
     }
 
     a:visited{
-        color: #58595b;    
+        color: #58595b;
     }
 
     a:active {
@@ -530,7 +548,7 @@ audio {
         display: flex;
         justify-content: center;
         font-family: 'Varela Round', sans-serif;
-        
+
     }
 
     .minuteBoxHolder {
@@ -585,8 +603,8 @@ audio {
         cursor: pointer;
         font-size: 16px;
       }
-      
-      
+
+
       input[type=checkbox]:after {
           content: " ";
           display: inline-block;
@@ -594,7 +612,7 @@ audio {
           width: 20px;
           height: 20px;
       }
-      
+
       input[type=checkbox]:checked:after {
           content: "\2714";
           background-color: #006df0;
@@ -609,14 +627,14 @@ audio {
     .surveyBtn {
         background-color: gray;
         width: 100%;
-        font-size: 10px;
+        font-size: 12px;
         border-radius: 10px;
         color: white;
         border: none;
         outline: none;
         font-size: 10px;
         font-family: 'Varela Round', sans-serif;
-        
+
     }
     .searchBar {
         width: 95%;
@@ -706,6 +724,9 @@ audio {
     padding: 16px;
 }
 
+
+
+/* menu-sizing */
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}

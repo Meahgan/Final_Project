@@ -65,7 +65,7 @@ a:hover {
 }
 
 .timeTable {
-    margin-top: 50px;
+    margin-top: 25px;
     font-family: 'Baloo', cursive;
     color:gray;
     font-size: 35px;
@@ -102,7 +102,7 @@ body {
 }
 /*----------home.js------------*/
 
-.searchTitle {
+#searchKeyword {
     display: flex;
     text-align: center;
     margin: 0 auto;
@@ -113,11 +113,39 @@ body {
     z-index: 0;
     margin-bottom: 5%;
 }
-.surveyBtn {
+
+.showTimeBtn {
+   
     margin-top: 10px;
     margin-bottom: 15px;
     border-radius: 15px;
-    background-color: #d2232a;
+    background-color:  gray;
+    color: white;
+    font-size: 15px;
+    width: 25%;
+    font-family: 'Varela Round', sans-serif;
+    border: none;
+    z-index: 0;
+    padding: 10px;
+    outline: none;
+}
+
+.hideTimeBtn {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    background-color: gray;
+    color: white;
+    font-size: 15px;
+    width: 25%;
+    font-family: 'Varela Round', sans-serif;
+    border: none;
+    z-index: 0;
+    padding: 10px;
+    outline: none;
+}
+.surveyBtn {
+    background-color: gray;
     color: white;
     font-size: 24px;
     width: 100%;
@@ -127,28 +155,38 @@ body {
     padding: 10px;
     outline: none;
 }
-.searchBtn {
-    margin-top: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+#lowerButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     border-radius: 15px;
-    background-color: #d2232a;
     color: white;
     font-size: 24px;
-    width: 100%;
     font-family: 'Varela Round', sans-serif;
     border: none;
     outline: none;
     z-index: 0;
 }
+.searchBtn {
+    background-color: gray;
+    color: white;
+    font-size: 24px;
+    width: 100%;
+    font-family: 'Varela Round', sans-serif;
+    border: none;
+    z-index: 0;
+    padding: 10px;
+    outline: none;
+}
+
 .search {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
 }
+
 .searchBar {
     width: 85%;
     padding-left: 8px;
@@ -163,7 +201,7 @@ body {
     outline: none;
 }
 .goBtn {
-    background-color: #d2232a;
+    background-color: gray;
     padding: 10px;
     width: 75px;
     height: 50px;
@@ -225,6 +263,7 @@ body {
 
 .minuteBoxHolder {
     display: flex;
+    margin-top: 20px;
     justify-content: flex-start;
     color: #58595b;
     font-size: 21px;
@@ -233,6 +272,8 @@ body {
     margin-right: 20px;
     margin-bottom: 30px;
 }
+
+
 .categoryTitles {
     margin-top: 5px;
     font-family: 'Varela Round', sans-serif;
@@ -559,13 +600,6 @@ body {
         color:  #d2232a;
     }
 
-    .timeTable {
-        margin-top: 20px;
-        margin-left: 20px;
-        display: flex;
-        justify-content: center;
-        font-size: 25px;
-    }
     #callBtns {
         display: flex;
         flex-direction: column;

@@ -275,6 +275,13 @@ body {
     color: #58595b;
     font-size: 21px;
 }
+.minuteBoxHolder2{
+  display: flex;
+  margin-top: 20px;
+  justify-content: flex-start;
+  color: #58595b;
+  font-size: 21px;
+}
 .minuteBoxes {
     margin-right: 20px;
     margin-bottom: 30px;
@@ -768,8 +775,54 @@ audio {
     transition: margin-left .5s;
     padding: 16px;
 }
+.sift{
+  font-size: 46px;
+}
+.tagline{
+  font-size: 26px;
+}
+.timeTable{
+  font-size: 17px;
+}
+.searchBar{
+  width: 100%;
+  border-radius: 0%;
+  font-size: 17px;
+}
+.search{
+  display: flex;
+  flex-direction: column;
+}
+.goBtn{
+  width: 100%;
+}
+.showTimeBtn{
+  width: 100%;
+}
+.hideTimeBtn{
+  width: 100%;
+}
+.fillerText{
+  font-size: 23px;
+}
+#lowerButtons{
+  display: flex;
+  flex-direction: column;
+}
 
-
+.homeIcons{
+  width: 100%;
+}
+.homeText{
+  font-size: 25px;
+}
+.bodyCopy{
+  font-size: 20px;
+}
+.minuteBoxHolder{
+  display: flex;
+  flex-direction: column;
+}
 
 /* HAMBURGER MENU SIZING */
 @media screen and (max-height: 450px) {

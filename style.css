@@ -1056,7 +1056,8 @@ audio {
   font-size: 17px;
 }
 .searchBar{
-
+    margin-top: 5px;
+height: 40%;
   border-radius: 5px;
   font-size: 17px;
 }
@@ -1067,7 +1068,7 @@ audio {
 }
 
 .goBtn{
-  width: 50px;
+
 }
 
 .fillerText{

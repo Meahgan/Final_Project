@@ -624,6 +624,9 @@ input[type=checkbox] {
     #mySidenav {
         display: block;
     }
+    .sidenav:hover {
+        color: white;
+    }
     #overlay #main {
         display: block;
         color: white;
@@ -636,9 +639,14 @@ input[type=checkbox] {
         padding-right: 0;
     }
     .titleBars {
+        display: flex;
+
+        flex-wrap: wrap;
+        width: 250px;
+        letter-spacing: 1px;
         text-align: center;
         font-family: 'Varela Round', sans-serif;
-        color: black;
+        color: white;
         font-size: 20px;
     }
     h3.question{

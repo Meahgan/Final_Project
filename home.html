@@ -1,3 +1,4 @@
+<div id="homepg">
     <div class="loader" ng-show="$ctrl.move"></div>
     <div id="overlay">
         <div id="mySidenav" class="sidenav">
@@ -6,11 +7,11 @@
                 <a class="navBar" href="#!/results">Recent Sifts</a>
                 <a class="navBar" href="#!/yourList">My Podcasts</a>
               </div>
-              
+
               <div id="main">
                 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
               </div>
-        
+
       <div class="links">
         <a class="navBar" href="#!/Home">Home</a>
         <a class="navBar" href="#!/results">Recent Sifts</a>
@@ -20,21 +21,21 @@
       <div class="sift"><p><em>SIFT</em></p></div>
       <div class="tagline"><h6>A better way to search for your next podcast</h6></div>
       </div>
-     
+
 
       <div id="homeContainer">
-   
+
       <div id="home">
       <div class="timeTable"><p>Know what you're looking for?</p></div>
 
       <div id="searchKeyword">
       <div class="searchTitle">
-        
+
         <div class="search">
           <input class="searchBar" type="text" placeholder="Search by keyword..." ng-model="title">
           <button class="goBtn" ng-click="$ctrl.searchBar(title)">GO</button>
         </div>
-        
+
       <div class="minuteBoxHolderHome" ng-show="time" >
             <span class="minuteBoxes"><input type="checkbox" ng-model="$ctrl.length" ng-true-value=[0,15]> <span>0-15 min</span></span>
             <span class="minuteBoxes"><input type="checkbox" ng-model="$ctrl.length" ng-true-value=[16,30]> <span>15-30 min</span></span>
@@ -42,7 +43,7 @@
             <span class="minuteBoxes"><input type="checkbox" ng-model="$ctrl.length" ng-true-value=[46,60]> <span>45-60 min</span></span>
             <span class="minuteBoxes"><input type="checkbox" ng-model="$ctrl.length" ng-true-value=[61,300]> <span>60+ min</span></span>
         </div>
-      
+
         <button class="showTimeBtn" ng-click="time = true" ng-hide="time">Add a Time</button>
         <button class="hideTimeBtn" ng-click="time = false" ng-show="time">Hide Time</button>
         </div>
@@ -50,14 +51,17 @@
       <p class="fillerText">Or Search By...</p>
 
         <div id="lowerButtons">
+
               <a class="homeIcons" href="#!/survey"><img src="icons/question.svg" alt="Survey">
               <p class="homeText">Survey</p><p class="bodyCopy">Don't know what you want? Take our survey!</p></a>
+
             <a class="homeIcons" href="#!/categorySearch">
               <img src="icons/headphones.svg" alt="Search">
               <p class="homeText">Category</p><p class="bodyCopy">Search Podcasts by Category</p>
             </a>
+
         </div>
         </div>
         </div>
-      </div>   
       </div>
+</div>

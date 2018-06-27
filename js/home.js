@@ -3,6 +3,7 @@
   let home = {
     templateUrl: "home.html"
     ,
+
     //this will call the search title & length function
     controller: function (podcastService, $location) {
       let vm = this;
@@ -22,6 +23,7 @@
       }
     }
   };
+
 
   home.$inject = ["podcastService", "$location"];
 

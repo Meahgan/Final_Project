@@ -169,9 +169,6 @@ body {
     align-items: flex-start;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    margin-bottom: 50px;
-    width:70%;
 }
 .homeText {
     color:black;
@@ -196,14 +193,10 @@ body {
     margin-top: 0px;
 }
 .homeIcons {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:center;
-    width: 40%;
+  text-align: center;
+  display: block;
 }
 .homeIcons img {
-    display: flex;
     width: 35%;
 }
 .search {
@@ -212,6 +205,7 @@ body {
     flex-direction: row;
     align-items: center;
 }
+
 .searchBar {
     width: 85%;
     padding-left: 8px;
@@ -247,6 +241,7 @@ body {
 .goBtn:hover{
     background-color: #d2232a;
 }
+
 /*----------yourList.js------------*/
 /*------loading picture-------- */
 
@@ -301,6 +296,13 @@ body {
     color: #58595b;
     font-size: 16px;
     margin-left: 10%;
+}
+.minuteBoxHolder2{
+  display: flex;
+  margin-top: 20px;
+  justify-content: flex-start;
+  color: #58595b;
+  font-size: 21px;
 }
 .minuteBoxes {
     margin-right: 20px;
@@ -615,12 +617,34 @@ input[type=checkbox] {
       width: 25px;
       height: 25px;
   }
-  
+
 
 }
 /*--------------MOBILE MEDIA QUERY-----------------------*/
 
 @media only screen and (max-width: 767px){
+  .removeBtn{
+    margin-right: 15px;
+  }
+  #filter{
+    width: 240px;
+  }
+    .minuteBoxHolder2{
+      font-size: 11px;
+      margin-left: 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    span.s{
+      display: flex;
+    }
+
+    span.minuteBoxesSurvey{
+      font-size: 11px;
+      display: root;
+      padding-bottom:10px;
+    }
     #mySidenav {
         display: block;
     }
@@ -650,15 +674,20 @@ input[type=checkbox] {
         font-size: 20px;
     }
     h3.question{
-      font-size: 16px;
+      font-size: 18px;
+      padding-bottom: 5px;
+      margin-bottom: 3px;
     }
     #survey{
       border-style: none;
-      width: 90%;
+      padding: 0%;
+      width: 300px;
+      /* width: 90%; */
     }
     .answer{
       font-size: 12px;
       width: 140px;
+      padding-bottom: 15px;
     }
     #homeTitle {
         margin-bottom: 151px;
@@ -699,7 +728,7 @@ input[type=checkbox] {
         width: 200px;
 
     }
-    
+
     .goBtn {
         background-color: #d2232a;
         padding: 5px;
@@ -757,12 +786,12 @@ input[type=checkbox] {
     .surveyBtn {
         background-color: #d2232a;
         width: 100%;
-        font-size: 12px;
-        border-radius: 10px;
+        font-size: 19px;
+        border-radius: 0px;
         color: white;
         border: none;
         outline: none;
-        font-size: 10px;
+        /* font-size: 10px; */
         font-family: 'Varela Round', sans-serif;
 
     }
@@ -937,8 +966,54 @@ audio {
     transition: margin-left .5s;
     padding: 16px;
 }
+.sift{
+  font-size: 46px;
+}
+.tagline{
+  font-size: 26px;
+}
+.timeTable{
+  font-size: 17px;
+}
+.searchBar{
+  width: 100%;
+  border-radius: 0%;
+  font-size: 17px;
+}
+.search{
+  display: flex;
+  flex-direction: column;
+}
+.goBtn{
+  width: 100%;
+}
+.showTimeBtn{
+  width: 100%;
+}
+.hideTimeBtn{
+  width: 100%;
+}
+.fillerText{
+  font-size: 23px;
+}
+#lowerButtons{
+  display: flex;
+  flex-direction: column;
+}
 
-
+.homeIcons{
+  width: 100%;
+}
+.homeText{
+  font-size: 25px;
+}
+.bodyCopy{
+  font-size: 20px;
+}
+.minuteBoxHolder{
+  display: flex;
+  flex-direction: column;
+}
 
 /* HAMBURGER MENU SIZING */
 @media screen and (max-height: 450px) {

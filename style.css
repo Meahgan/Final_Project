@@ -672,14 +672,7 @@ input[type=checkbox] {
       width: 25px;
       height: 25px;
   }
-  .tagline  h6{
-      width: 450px;
-margin-bottom: 50px;
- padding-top: 0px;
- margin-top: 0px;
-  font-size: 30px;
-  line-height: 1.6;
-}
+
 .homeIcons{
    padding-top: 40px;
    padding-bottom: 50px;

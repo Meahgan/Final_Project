@@ -166,7 +166,7 @@ body {
     outline: none;
 }
 #lowerButtons {
-
+    align-items: flex-start;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -220,10 +220,14 @@ body {
     margin-bottom: 20px;
     border-radius: 15px;
     font-family: 'Varela Round', sans-serif;
-    font-size: 24px;
+    font-size: 25px;
     z-index: 0;
+    background: none;
     border: 1px solid gray;
     outline: none;
+    color: black;
+}
+.searchBar::placeholder {
     color: black;
 }
 .goBtn {
@@ -471,8 +475,9 @@ body {
     color: white;
 }
 
-::placeholder {
-    color: gray;
+#filter::placeholder {
+    color: white;
+  
 }
 .podChoices {
     width: 90%;
@@ -548,9 +553,14 @@ body {
     }
     .links {
         display: flex;
+        margin-right: 5%;
+        padding-top: 2%;
     }
     .sift {
-
+        margin-left: 10%;
+    }
+    .tagline {
+        font-size: 11vh;
     }
 
 }
@@ -755,11 +765,17 @@ input[type=checkbox] {
         border-radius: 10px;
         padding-top: 6px;
         padding-bottom: 6px;
+        
         border: 1px solid gray;
         font-family: 'Varela Round', sans-serif;
     }
+
     .searchTitle {
         margin-top: -3%;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+       
     }
    .rightHalf {
     display: none;
@@ -798,25 +814,50 @@ audio {
         width: 65%;
     }
     .sift{
+        padding-top: 10%;
+        padding-bottom: 0px;
         font-size: 46px;
+       margin-bottom: 0px;
+       margin-left: 10%;;
       }
-      .tagline{
-        font-size: 26px;
+      .tagline  {
+          margin-top: -90px;
+        margin-bottom: 60px;
+        padding-top: 0px;
+        font-size: 10vw;
+        line-height: 1.6;
       }
-      .timeTable{
-        font-size: 17px;
+      .timeTable p{
+        text-align: center;
+        font-size: 8vw;
       }
       .searchBar{
-        width: 100%;
-        border-radius: 0%;
-        font-size: 17px;
+        width: 200px;
+
+        border-radius: 5px;;
+        font-size: 4vw;
+        background: none;
       }
       .search{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        width: 300px;
+        justify-content: center;
+        align-content: center;
       }
       .goBtn{
-        width: 100%;
+        background-color: gray;
+        width: 40px;
+        height: 33px;
+        border-radius: 30%;
+        margin-left: 5px;
+       
+        font-size: 12px;
+        color: white;
+        border: none;
+        font-family: 'Varela Round', sans-serif;
+        outline: none;
+   
       }
       .showTimeBtn{
         width: 100%;
@@ -826,6 +867,8 @@ audio {
       }
       .fillerText{
         font-size: 23px;
+        margin-bottom: 30px;
+
       }
       #lowerButtons{
         display: flex;
@@ -833,6 +876,7 @@ audio {
       }
       .homeIcons{
         width: 100%;
+        margin-top: 25px;
       }
       .homeText{
         font-size: 25px;

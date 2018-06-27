@@ -48,14 +48,14 @@ a:hover {
     font-family: 'Baloo', cursive;
     color:white;
     letter-spacing: 2px;
-    font-size: 100px;
+    font-size: 10vw;
     text-shadow: 4px 1px 20px rgba(0, 0, 0, .5);
     margin-left: 15%;
 }
-.tagline {
+.tagline  h6{
     color:white;
     letter-spacing: 2px;
-    font-size: 40px;
+    font-size: 10vw;
     z-index: 1;
     font-family: 'Varela Round', sans-serif;
     margin-left: 19px;
@@ -64,10 +64,10 @@ a:hover {
     margin-left: 10%;
 }
 
-.timeTable {
+.timeTable p{
     font-family: 'Baloo', cursive;
     color:rgb(59, 59, 59);
-    font-size: 50px;
+    font-size: 40px;
     letter-spacing: 2px;
 }
 
@@ -114,7 +114,7 @@ body {
 }
 
 #home {
-    margin-top:20px;
+    margin-top:-70px;
     display: flex;
     align-content: space-around;
     flex-direction: column;
@@ -131,13 +131,13 @@ body {
     margin: 0 auto;
     justify-content: center;
     flex-direction: column;
-    width: 60%;
+    width: 100%;
     font-family: 'Varela Round', sans-serif;
     z-index: 0;
     margin-bottom: 5%;
 }
 
-.showTimeBtn {
+#showTimeBtn {
     margin-top: 10px;
     margin-bottom: 15px;
     border-radius: 15px;
@@ -151,7 +151,7 @@ body {
     padding: 10px;
     outline: none;
 }
-.hideTimeBtn {
+#hideTimeBtn {
     margin-top: 10px;
     margin-bottom: 15px;
     border-radius: 15px;
@@ -193,21 +193,25 @@ body {
     margin-top: 0px;
 }
 .homeIcons {
+
   text-align: center;
   display: block;
 }
 .homeIcons img {
     width: 35%;
 }
-.search {
+.searchTitle {
+    width: 100%;
+}
+/* .search {
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
-}
+} */
 
 .searchBar {
-    width: 85%;
+    width:100%;
     padding-left: 8px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -226,8 +230,8 @@ body {
 }
 .goBtn {
     background-color: gray;
-    padding: 10px;
-    width: 75px;
+    padding: 15px;
+    width: 100%;
     height: 50px;
     margin-left: 5px;
     border-radius: 15px;
@@ -561,47 +565,98 @@ body {
     .sift {
         margin-left: 10%;
     }
-    .tagline {
-        font-size: 11vh;
+
+    .searchTitle{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+    .goBtn {
+        padding: 2px;
+        width: 100px;
+
+    }
+    
+ 
+    #searchKeyword {
+        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 50%;
     }
 
+    #showTimeBtn {
+        width: 50%;
+    }
 }
 /*--------------TABLET MEDIA QUERY-----------------------*/
-@media only screen and (min-width: 768px) and (max-width: 1024px){
-.sift{
-    margin-left: 8%;
-}
-.tagline {
-    margin-left: 8%;
-}
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+
 .goBtn {
     width: 75px;
     height: 50px;
     margin-left: 5px;
+    padding: 1px;
 }
 .links {
     display: none;
 }
+
 #main {
     display: block;
     color: white;
 }
-.timeTable {
-    font-size: 5vw;
+
+.timeTable p {
+    margin-top: 10%;
+  font-size: 35px;
 }
+
+.searchTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.searchBar{
+    border-radius: 5px;
+    font-size: 4vw;
+    background: none;
+  }
+
+  .goBtn{
+    background-color: gray;
+    width: 90px;
+    height: 40px;
+    border-radius: 30%;
+    font-size: 12px;
+    color: white;
+    border: none;
+    font-family: 'Varela Round', sans-serif;
+    outline: none;
+  }
+
 .bodyCopy {
     font-size: 18px;
     color:rgb(59, 59, 59);
 }
-#homeTitle {
-    margin-bottom: 145px;
-}
+
 .minuteBoxHolderHome span {
     font-size: 14px;
+    width: 100px;
 }
 .minuteBoxHolderHome {
     padding-right: 5%;
-    width: 105%;
+    width: 200%;
+ 
 }
 input[type=checkbox] {
     width: 25px;
@@ -617,8 +672,21 @@ input[type=checkbox] {
       width: 25px;
       height: 25px;
   }
-
-
+  .tagline  h6{
+      width: 450px;
+margin-bottom: 50px;
+ padding-top: 0px;
+ margin-top: 0px;
+  font-size: 30px;
+  line-height: 1.6;
+}
+.homeIcons{
+   padding-top: 40px;
+   padding-bottom: 50px;
+}
+.fillerText {
+   margin-bottom: 20px;
+}
 }
 /*--------------MOBILE MEDIA QUERY-----------------------*/
 
@@ -648,6 +716,9 @@ input[type=checkbox] {
     #mySidenav {
         display: block;
     }
+    .sidenav:hover {
+        color: white;
+    }
     #overlay #main {
         display: block;
         color: white;
@@ -660,10 +731,15 @@ input[type=checkbox] {
         padding-right: 0;
     }
     .titleBars {
+        display: flex;
+
+        flex-wrap: wrap;
+        width: 250px;
+        letter-spacing: 1px;
         text-align: center;
         font-family: 'Varela Round', sans-serif;
-        color: black;
-        font-size: 20px;
+        /* color: white;
+        font-size: 20px; */
     }
     h3.question{
       font-size: 18px;
@@ -842,20 +918,14 @@ input[type=checkbox] {
 audio {
         width: 65%;
     }
-    .sift{
-        padding-top: 10%;
-        padding-bottom: 0px;
-        font-size: 46px;
-       margin-bottom: 0px;
-       margin-left: 10%;;
-      }
+/*  
       .tagline  {
-          margin-top: -90px;
+          margin-top: -40px;
         margin-bottom: 60px;
         padding-top: 0px;
-        font-size: 10vw;
+        font-size: 40px;
         line-height: 1.6;
-      }
+      } */
       .timeTable p{
         text-align: center;
         font-size: 8vw;
@@ -888,11 +958,11 @@ audio {
         outline: none;
 
       }
-      .showTimeBtn{
-        width: 100%;
+      #showTimeBtn{
+        width: 50%;
       }
-      .hideTimeBtn{
-        width: 100%;
+      #hideTimeBtn{
+        width: 50%;
       }
       .fillerText{
         font-size: 23px;
@@ -902,6 +972,8 @@ audio {
       #lowerButtons{
         display: flex;
         flex-direction: column;
+        padding-left: 10%;
+        padding-right: 10%;
       }
       .homeIcons{
         width: 100%;
@@ -915,6 +987,8 @@ audio {
       }
       .minuteBoxHolderHome {
         display: flex;
+        width: 100%;
+        flex-wrap: wrap;
         flex-direction: column;
       }
 }
@@ -958,39 +1032,49 @@ audio {
     transition: margin-left .5s;
     padding: 16px;
 }
-.sift{
-  font-size: 46px;
+
+.sift {
+    font-size: 90px;
+    margin-left: 10%;
 }
-.tagline{
-  font-size: 26px;
+.sift p{
+   margin-top: 0px;
 }
+.tagline {
+    color:white;
+    letter-spacing: 2px;
+    font-size: 5vh;
+    z-index: 1;
+    font-family: 'Varela Round', sans-serif;
+    margin-left: 19px;
+    margin-bottom: 30px;
+    text-shadow: 4px 1px 13px rgb(19, 18, 18);
+    margin-left: 10%;
+}
+
 .timeTable{
   font-size: 17px;
 }
 .searchBar{
-  width: 100%;
-  border-radius: 0%;
+
+  border-radius: 5px;
   font-size: 17px;
 }
-.search{
+.search {
   display: flex;
-  flex-direction: column;
+  width:100%;
+
 }
+
 .goBtn{
-  width: 100%;
+  width: 50px;
 }
-.showTimeBtn{
-  width: 100%;
-}
-.hideTimeBtn{
-  width: 100%;
-}
+
 .fillerText{
   font-size: 23px;
 }
 #lowerButtons{
   display: flex;
-  flex-direction: column;
 }
 
 .homeIcons{
@@ -1002,16 +1086,14 @@ audio {
 .bodyCopy{
   font-size: 20px;
 }
-.minuteBoxHolder{
+/* .minuteBoxHolder{
   display: flex;
   flex-direction: column;
-}
+} */
 
 /* HAMBURGER MENU SIZING */
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
-.sift p {
-    margin-top: 0px;
-}
+

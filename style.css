@@ -923,9 +923,9 @@ audio {
       } */
       .timeTable p{
         text-align: center;
-        font-size: 18px;
+        font-size: 23px;
       }
-      
+
       .searchBar{
         width: 200px;
         border-radius: 5px;;
@@ -1048,7 +1048,10 @@ audio {
 }
 
 .timeTable{
-  font-size: 17px;
+  font-size: 7px;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 5%;
 }
 .searchBar{
     margin-top: 5px;

@@ -930,13 +930,14 @@ audio {
         text-align: center;
         font-size: 18px;
       }
+      
       .searchBar{
         width: 200px;
-
         border-radius: 5px;;
         font-size: 4vw;
         background: none;
       }
+
       .search{
         display: flex;
         flex-direction: row;

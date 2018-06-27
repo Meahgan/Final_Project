@@ -546,7 +546,7 @@ body {
 
 }
 /*-------------DESKTOP MEDIA QUERY-----------------------*/
-@media only screen and (min-width: 1025px) and (max-width:3999px){
+@media only screen and (min-width: 1024px) and (max-width:3999px){
     #mySidenav {
         display: none;
     }

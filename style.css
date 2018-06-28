@@ -28,6 +28,7 @@ a:hover {
     min-height: 100vh;
     min-width: 100%;
     z-index: 0;
+    overflow-x: hidden;
 }
 #blank a {
     color: #58595b;
@@ -75,6 +76,11 @@ a:hover {
 .minuteBoxes {
     font-family: 'Varela Round', sans-serif;
     color: #d2232a;
+  
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
 }
 span.answer {
     color: #006df0;
@@ -625,6 +631,9 @@ body {
 }
 .description {
   width: 90%;
+}
+#blank {
+    overflow-x: hidden;
 }
 .timeTableHome{
     text-align: center;

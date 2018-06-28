@@ -67,7 +67,7 @@ a:hover {
 .timeTableHome{
     font-family: 'Baloo', cursive;
     color:rgb(59, 59, 59);
-    font-size: 40px;
+    font-size: 50px;
     letter-spacing: 2px;
     padding-top: 5px;
 }
@@ -626,6 +626,11 @@ body {
 .description {
   width: 90%;
 }
+.timeTableHome{
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 10px;
+  }
 .goBtn {
     width: 75px;
     height: 50px;
@@ -1044,7 +1049,8 @@ audio {
       } */
       .timeTableHome{
         text-align: center;
-        font-size: 18px;
+        font-size: 23px;
+        padding-bottom: 10px;
       }
 
       .searchBar{

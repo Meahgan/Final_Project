@@ -972,10 +972,10 @@ margin-bottom: 50px;
           justify-content: center;
       }
     .surveyBtn {
-        background-color: #d2232a;
+        /* background-color: #d2232a; */
         width: 100%;
         font-size: 19px;
-        border-radius: 0px;
+        /* border-radius: 0px; */
         color: white;
         border: none;
         outline: none;

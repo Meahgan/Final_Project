@@ -40,7 +40,7 @@ a:hover {
 #homeTitle {
     width: 100%;
 
-    margin-bottom: 180px;
+    margin-bottom: 130px;
 
 }
 .sift {
@@ -759,11 +759,11 @@ input[type=checkbox] {
       height: 25px;
   }
   .taglineHome {
-      width: 600px;
-margin-bottom: 50px;
+      width: 650px;
+
  padding-top: 0px;
  margin-top: 0px;
-  font-size: 20px;
+  font-size: 25px;
   line-height: 1.6;
 }
 .homeIcons{
@@ -1123,11 +1123,11 @@ audio {
         flex-direction: column;
       }
       .taglineHome {
-        width: 300px;
+        width: 250px;
   margin-bottom: 50px;
    padding-top: 0px;
    margin-top: 0px;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.6;
   }
 
@@ -1180,7 +1180,7 @@ audio {
 .sift p{
    margin-top: 0px;
 }
-.tagline {
+/* .tagline {
     color:white;
     letter-spacing: 2px;
     z-index: 1;
@@ -1189,7 +1189,7 @@ audio {
     margin-bottom: 0px;
     text-shadow: 4px 1px 13px rgb(19, 18, 18);
     margin-left: 10%;
-}
+} */
 
 .timeTable{
   font-size: 7px;

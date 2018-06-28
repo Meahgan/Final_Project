@@ -793,6 +793,11 @@ margin-bottom: 50px;
 /*--------------MOBILE MEDIA QUERY-----------------------*/
 
 @media only screen and (max-width: 767px){
+    #blank {
+
+            overflow-x: hidden;
+ 
+    }
     .titleBarsTab {
         font-size: 25px;
         padding-bottom: 30px;

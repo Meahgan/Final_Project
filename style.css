@@ -1,13 +1,5 @@
 /*----------GLOBAL TAGS------------*/
-textarea,
-input.text,
-input[type="text"],
-input[type="button"],
-input[type="submit"],
-.input-checkbox {
-  -webkit-appearance: none;
-  border-radius: 0;
-}
+
 .links {
     display: flex;
     justify-content: flex-end;
@@ -537,38 +529,11 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
 }
- input[type=checkbox] {
-    width: 30px;
-    height: 30px;
-    margin-right: 8px;
-    cursor: pointer;
-    font-size: 27px;
-  }
-
-
-  input[type=checkbox]:after {
-      content: " ";
-      display: inline-block;
-      visibility: visible;
-      width: 30px;
-      height: 30px;
-  }
-
-  input[type=checkbox]:checked:after {
-      content: "\2714";
-      background-color: #006df0;
-      border-radius: 3px;
-      width: 30px;
-      height: 30px;
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      outline: none;
-  }
-.minuteBoxHolder span {
+ 
+.minuteBoxHolderHome span {
     display: flex;
     align-items: center;
+    width: 100%;
 }
 .horizontal {
     display: flex;
@@ -597,7 +562,35 @@ body {
     .sift {
         margin-left: 10%;
     }
-
+    input[type=checkbox] {
+        width: 30px;
+        height: 30px;
+        margin-right: 8px;
+        cursor: pointer;
+        font-size: 27px;
+      }
+    
+    
+      input[type=checkbox]:after {
+          content: " ";
+          display: inline-block;
+          visibility: visible;
+          width: 30px;
+          height: 30px;
+      }
+    
+      input[type=checkbox]:checked:after {
+          content: "\2714";
+          background-color: #006df0;
+          border-radius: 3px;
+          width: 30px;
+          height: 30px;
+          color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          outline: none;
+      }
     .searchTitle{
         width: 100%;
         display: flex;
@@ -756,7 +749,7 @@ audio {
     width: 40%;
 
 }
-input[type=checkbox] {
+/* input[type=checkbox] {
     width: 25px;
     height: 25px;
   }
@@ -769,7 +762,7 @@ input[type=checkbox] {
   input[type=checkbox]:checked:after {
       width: 25px;
       height: 25px;
-  }
+  } */
   .taglineHome {
       width: 650px;
 
@@ -967,7 +960,7 @@ input[type=checkbox] {
         font-size: 10px;
         font-family: 'Varela Round', sans-serif;
     }
-    input[type=checkbox] {
+    /* input[type=checkbox] {
         width: 20px;
         height: 20px;
         margin-right: 8px;
@@ -994,7 +987,7 @@ input[type=checkbox] {
           display: flex;
           align-items: center;
           justify-content: center;
-      }
+      } */
     .surveyBtn {
         /* background-color: #d2232a; */
         width: 100%;

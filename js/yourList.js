@@ -7,6 +7,7 @@
 			vm.list = podcastService.getList();
 			vm.remove = function (index) {
 				podcastService.removePodcast(index);
+				
 			}
 		}
 	};

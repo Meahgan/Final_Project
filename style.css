@@ -614,7 +614,7 @@ body {
 
 .timeTable p {
     margin-top: 10%;
-  font-size: 35px;
+  font-size: 30px;
 }
 
 .searchTitle {
@@ -728,6 +728,7 @@ input[type=checkbox] {
         text-align: center;
         font-family: 'Varela Round', sans-serif;
         font-size: 20px;
+        color: white;
     }
     h3.question{
       font-size: 18px;

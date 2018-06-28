@@ -1,4 +1,5 @@
 /*----------GLOBAL TAGS------------*/
+
 .links {
     display: flex;
     justify-content: flex-end;
@@ -1244,4 +1245,14 @@ height: 40%;
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+
+textarea,
+input.text,
+input[type=“text”],
+input[type=“button”],
+input[type=“submit”],
+.input-checkbox {
+-webkit-appearance: none;
+border-radius: 0;
 }

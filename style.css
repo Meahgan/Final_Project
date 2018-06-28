@@ -605,6 +605,13 @@ body {
     #showTimeBtn {
         width: 50%;
     }
+    .titleBarsTab {
+        font-size: 45px;
+        padding-bottom: 30px;
+        font-family: 'Varela Round', sans-serif;
+        color: black;
+        text-align: center;
+    }
 }
 /*--------------TABLET MEDIA QUERY-----------------------*/
 @media only screen and (min-width: 768px) and (max-width: 1023px){
@@ -784,6 +791,15 @@ margin-bottom: 50px;
 /*--------------MOBILE MEDIA QUERY-----------------------*/
 
 @media only screen and (max-width: 767px){
+    .titleBarsTab {
+        font-size: 25px;
+        padding-bottom: 30px;
+        font-family: 'Varela Round', sans-serif;
+        color: black;
+        text-align: center;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
   .removeBtn{
     margin-right: 25px;
   }

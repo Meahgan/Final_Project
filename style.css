@@ -1,5 +1,13 @@
 /*----------GLOBAL TAGS------------*/
-
+textarea,
+input.text,
+input[type="text"],
+input[type="button"],
+input[type="submit"],
+.input-checkbox {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
 .links {
     display: flex;
     justify-content: flex-end;
@@ -77,7 +85,7 @@ a:hover {
 .minuteBoxes {
     font-family: 'Varela Round', sans-serif;
     color: #d2232a;
-
+   
     font-size: 16px;
     display: flex;
     justify-content: center;
@@ -1247,15 +1255,3 @@ height: 40%;
   .sidenav a {font-size: 18px;}
 }
 
-* {
-    -webkit-tap-highlight-color: transparent;
- }
- a, article, div, h1, h2, h3, h4, h5, h6, img, section, span {
-    -moz-user-select: none;
-    -webkit-user-select: none;
- }
- input, select, textarea {
-    -webkit-appearance: none;
-    -webkit-border-radius:0;
-    border-radius: 0;
- }

@@ -5,17 +5,17 @@
                 <a class="navBar" href="#!/results">Recent Sifts</a>
                 <a class="navBar" href="#!/yourList">My Podcasts</a>
               </div>
-              
+
               <div id="main">
                 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
               </div>
-        
+
       <div class="links">
         <a class="navBar" href="#!/Home">Home</a>
         <a class="navBar" href="#!/results">Recent Sifts</a>
         <a class="navBar" href="#!/yourList">My Podcasts</a>
       </div>
-      <h1 class="titleBars">My Podcast List</h1>
+      <h1 class="titleBarsResults">My Podcast List</h1>
     <input id="filter" ng-model="searchText" placeholder="Filter your results..." />
 
     <div class="result" ng-repeat="pods in $ctrl.list | filter: searchText track by $index">

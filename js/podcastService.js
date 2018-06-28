@@ -38,7 +38,7 @@
             return podList;
         }
         const addPodcast = function (newPod) {
-            podList.push(newPod);
+            podList.unshift(newPod);
         }
         const removePodcast = function (index){
             podList.splice(index,1);

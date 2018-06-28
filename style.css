@@ -740,8 +740,8 @@ audio {
     width: 100px;
 }
 .minuteBoxHolderHome {
-    padding-right: 5%;
-    width: 200%;
+    padding-left: 30px;
+    width: 40%;
 
 }
 input[type=checkbox] {

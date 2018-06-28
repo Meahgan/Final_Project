@@ -55,7 +55,7 @@
                 method: 'GET',
                 url: `https://listennotes.p.mashape.com/api/v1/search?genre_ids=68%2C82&language=English&len_max=${max}&len_min=${min}&offset=${offset}&only_in=Only+search+in+these+fields&published_after=1390190241000&published_before=1490190241000&q=${title}&sort_by_date=0&type=episode`,
                 headers: {
-                    'X-Mashape-Key': '8bIXPUSY6Hmsh48N9SIRuhp89hoTp1Lqks5jsnps4Q3gYSWt1u',
+                    'X-Mashape-Key': 'VjIFfkzmcFmshzo8Rccn1XWG2tTpp1T1EscjsnsmIWfOOvTZFI',
                     'Accept': 'application/json'
                 }
             };
@@ -74,7 +74,7 @@
                 method: 'GET',
                 url: `https://listennotes.p.mashape.com/api/v1/search?genre_ids=${genre}&language=English&len_max=${max}&len_min=${min}&offset=${offset}&only_in=Only+search+in+these+fields&published_after=1390190241000&published_before=1490190241000&q=the&sort_by_date=0&type=episode`,
                 headers: {
-                    'X-Mashape-Key': '8bIXPUSY6Hmsh48N9SIRuhp89hoTp1Lqks5jsnps4Q3gYSWt1u',
+                    'X-Mashape-Key': 'VjIFfkzmcFmshzo8Rccn1XWG2tTpp1T1EscjsnsmIWfOOvTZFI',
                     'Accept': 'application/json'
                 }
             };
@@ -91,7 +91,7 @@
             method: 'GET',
             url: `https://listennotes.p.mashape.com/api/v1/search?genre_ids=${genre}&language=English&len_max=${max}&len_min=${min}&offset=${offset}&only_in=Only+search+in+these+fields&published_after=1390190241000&published_before=1490190241000&q=the&sort_by_date=0&type=episode`,
             headers: {
-                'X-Mashape-Key': '8bIXPUSY6Hmsh48N9SIRuhp89hoTp1Lqks5jsnps4Q3gYSWt1u',
+                'X-Mashape-Key': 'VjIFfkzmcFmshzo8Rccn1XWG2tTpp1T1EscjsnsmIWfOOvTZFI',
                 'Accept': 'application/json'
             }
         };

@@ -395,7 +395,7 @@ body {
     overflow: auto;
 }
 .addBtn, .removeBtn {
-    width: 60px;
+    width: 45px;
     height: 47px;
     border-radius: 50%;
     border: none;
